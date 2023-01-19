@@ -588,30 +588,16 @@ empty bodies. A bicycle's behavior, if specified as an interface, might appear
 as follows:
 
 ```java
-interface
-Bicycle
-{
+interface Bicycle {
 
     //  wheel revolutions per minute
-    void changeCadence(int
-    newValue
-)
-    ;
+    void changeCadence(int newValue);
 
-    void changeGear(int
-    newValue
-)
-    ;
+    void changeGear(int newValue);
 
-    void speedUp(int
-    increment
-)
-    ;
+    void speedUp(int increment);
 
-    void applyBrakes(int
-    decrement
-)
-    ;
+    void applyBrakes(int decrement);
 }
 ```
 
@@ -622,54 +608,36 @@ the implements keyword in the class declaration:
 ```java
 class ACMEBicycle implements Bicycle {
 
-    int
-    cadence = 0;
-    int
-    speed = 0;
-    int
-    gear = 1;
+    int cadence = 0;
+    int speed = 0;
+    int gear = 1;
 
-    // The compiler will now require that methods
-    // changeCadence, changeGear, speedUp, and applyBrakes
-    // all be implemented. Compilation will fail if those
-    // methods are missing from this class.
+   // The compiler will now require that methods
+   // changeCadence, changeGear, speedUp, and applyBrakes
+   // all be implemented. Compilation will fail if those
+   // methods are missing from this class.
 
-    void
+    void changeCadence(int newValue) {
+         cadence = newValue;
+    }
 
-    changeCadence(int
+    void changeGear(int newValue) {
+         gear = newValue;
+    }
 
-    newValue
-) {
-    cadence = newValue;
-}
+    void speedUp(int increment) {
+         speed = speed + increment;   
+    }
 
-void changeGear(int
-newValue
-)
-{
-    gear = newValue;
-}
+    void applyBrakes(int decrement) {
+         speed = speed - decrement;
+    }
 
-void speedUp(int
-increment
-)
-{
-    speed = speed + increment;
-}
-
-void applyBrakes(int
-decrement
-)
-{
-    speed = speed - decrement;
-}
-
-void printStates()
-{
-    System.out.println("cadence:" +
-        cadence + " speed:" +
-        speed + " gear:" + gear);
-}
+    void printStates() {
+         System.out.println("cadence:" +
+             cadence + " speed:" + 
+             speed + " gear:" + gear);
+    }
 }
 ```
 
