@@ -34,10 +34,6 @@ def clean_cell(cell_text):
     # Remove trailing, leading, and two or more continuous spaces
     cleaned_cell = re.sub(" +", ' ', cleaned_cell.strip())
 
-    # If cell is empty, fill in with 'NaN'
-    if cleaned_cell == '':
-        cleaned_cell = "NaN"
-
     return cleaned_cell
 
 
@@ -60,8 +56,8 @@ def clean_list(csv_list: list) -> list:
         cleaned_list.append(cleaned_row)
 
     # Lengthen the rows
-    for num in too_short_rows:
-        lengthen_row(cleaned_list[num], longest_row)
+    # for num in too_short_rows:
+    #     lengthen_row(cleaned_list[num], longest_row)
 
     return cleaned_list
 
