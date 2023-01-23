@@ -399,14 +399,10 @@ public class helloWorld {
 
 // -------------------Data Types------------------
 
-String
-Text = "This is a string";
-int
-myNum = 15;
-char
-alphabet = 'b';
-float
-fractionalNumber = 15.44f;  // End floats with f 
+String Text = "This is a string";
+int myNum = 15;
+char alphabet = 'b';
+float fractionalNumber = 15.44f;  // End floats with f 
 float scientificNumber = 34e3f;  // Scientific numbers can be used as well
 double d1 = 12E4d;  // End doubles with d
 double veryLongNumber = 15.22222323232;
