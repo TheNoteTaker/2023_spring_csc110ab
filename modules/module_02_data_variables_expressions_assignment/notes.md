@@ -73,9 +73,14 @@
 
 # General Notes
 
+[![](https://yt3.ggpht.com/CVHEVOn-c21b6FTTOOhZH71ZbEw8x1Vr4BZPWGn2y7E1e19Yu55T_gKaKbplyhOraY3Bhxc-=s48-c-k-c0x00ffffff-no-rj)](https://www.youtube.com/watch?v=FZhZgLF-2L4 "Java Math and random classes")
+
+- YouTube video covering Java Math & Random classes 
+
 **Incremental development** is the process of writing, compiling, and testing a
 small amount of code, then writing, compiling, and testing a small amount more
 (an incremental amount), and so on.
+
 
 # Zybooks
 
