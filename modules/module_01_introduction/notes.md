@@ -2,68 +2,68 @@
 
 - [CSC110 AB Notes](#csc110-ab-notes)
 - [Google Slides](#google-slides)
-  - [What is a computer?](#what-is-a-computer)
-  - [Programming Languages](#programming-languages)
-  - [The Java Programming Language](#the-java-programming-language)
-  - [A Java Program](#a-java-program)
-  - [Comments](#comments)
-  - [Identifiers](#identifiers)
-    - [Conventions](#conventions)
-  - [White Space](#white-space)
-    - [Example](#example)
-  - [Documenting Your Code](#documenting-your-code)
-  - [What Is The Purpose of Programming?](#what-is-the-purpose-of-programming)
-  - [Problem-Solving With Programming](#problem-solving-with-programming)
-  - [The Program Development Process](#the-program-development-process)
-  - [How Code Runs](#how-code-runs)
-  - [How Java Code Runs](#how-java-code-runs)
-  - [Program Errors](#program-errors)
-  - [Development Environment](#development-environment)
-  - [Java IDEs](#java-ides)
-  - [Object-Oriented Programming](#object-oriented-programming)
-    - [Methods](#methods)
-  - [Objects vs Classes](#objects-vs-classes)
-    - [Examples](#examples)
+    - [What is a computer?](#what-is-a-computer)
+    - [Programming Languages](#programming-languages)
+    - [The Java Programming Language](#the-java-programming-language)
+    - [A Java Program](#a-java-program)
+    - [Comments](#comments)
+    - [Identifiers](#identifiers)
+        - [Conventions](#conventions)
+    - [White Space](#white-space)
+        - [Example](#example)
+    - [Documenting Your Code](#documenting-your-code)
+    - [What Is The Purpose of Programming?](#what-is-the-purpose-of-programming)
+    - [Problem-Solving With Programming](#problem-solving-with-programming)
+    - [The Program Development Process](#the-program-development-process)
+    - [How Code Runs](#how-code-runs)
+    - [How Java Code Runs](#how-java-code-runs)
+    - [Program Errors](#program-errors)
+    - [Development Environment](#development-environment)
+    - [Java IDEs](#java-ides)
+    - [Object-Oriented Programming](#object-oriented-programming)
+        - [Methods](#methods)
+    - [Objects vs Classes](#objects-vs-classes)
+        - [Examples](#examples)
 - [Programming Basics](#programming-basics)
-  - [Data Types](#data-types)
-  - [Objects](#objects)
-    - [Example](#example-1)
-  - [Inheritance](#inheritance)
-    - [Inheritance Syntax](#inheritance-syntax)
-  - [Interface](#interface)
-  - [What Is a Package?](#what-is-a-package)
-  - [Variables](#variables)
-  - [Operators](#operators)
-  - [Expressions, Statements, and Blocks](#expressions-statements-and-blocks)
-  - [Control Flow Statements](#control-flow-statements)
+    - [Data Types](#data-types)
+    - [Objects](#objects)
+        - [Example](#example-1)
+    - [Inheritance](#inheritance)
+        - [Inheritance Syntax](#inheritance-syntax)
+    - [Interface](#interface)
+    - [What Is a Package?](#what-is-a-package)
+    - [Variables](#variables)
+    - [Operators](#operators)
+    - [Expressions, Statements, and Blocks](#expressions-statements-and-blocks)
+    - [Control Flow Statements](#control-flow-statements)
 - [ZyBooks](#zybooks)
-  - [Computer Program Basics](#computer-program-basics)
-  - [Computational Thinking](#computational-thinking)
-  - [Basic Input](#basic-input)
-    - [Example 1](#example-1-1)
-  - [Basic output: Text](#basic-output-text)
-  - [Whitespace](#whitespace)
-    - [Good Example of Whitespace](#good-example-of-whitespace)
-    - [Bad Example of Whitespace](#bad-example-of-whitespace)
-  - [Errors and Warnings](#errors-and-warnings)
-    - [Syntax Errors](#syntax-errors)
-    - [Unclear error messages](#unclear-error-messages)
-    - [Logic Errors](#logic-errors)
-    - [Compiling Frequently](#compiling-frequently)
-    - [Compiler Warnings](#compiler-warnings)
-    - [Precision](#precision)
-  - [Computers and Programs](#computers-and-programs)
-    - [Switches](#switches)
-    - [Processors and Memory](#processors-and-memory)
-    - [Instructions](#instructions)
-    - [Writing Computer Programs](#writing-computer-programs)
-  - [Computer Tour](#computer-tour)
-    - [Short History](#short-history)
-    - [Computer Components](#computer-components)
-  - [Language History](#language-history)
-  - [Precision, logic, and computational thinking](#precision-logic-and-computational-thinking)
+    - [Computer Program Basics](#computer-program-basics)
+    - [Computational Thinking](#computational-thinking)
+    - [Basic Input](#basic-input)
+        - [Example 1](#example-1-1)
+    - [Basic output: Text](#basic-output-text)
+    - [Whitespace](#whitespace)
+        - [Good Example of Whitespace](#good-example-of-whitespace)
+        - [Bad Example of Whitespace](#bad-example-of-whitespace)
+    - [Errors and Warnings](#errors-and-warnings)
+        - [Syntax Errors](#syntax-errors)
+        - [Unclear error messages](#unclear-error-messages)
+        - [Logic Errors](#logic-errors)
+        - [Compiling Frequently](#compiling-frequently)
+        - [Compiler Warnings](#compiler-warnings)
+        - [Precision](#precision)
+    - [Computers and Programs](#computers-and-programs)
+        - [Switches](#switches)
+        - [Processors and Memory](#processors-and-memory)
+        - [Instructions](#instructions)
+        - [Writing Computer Programs](#writing-computer-programs)
+    - [Computer Tour](#computer-tour)
+        - [Short History](#short-history)
+        - [Computer Components](#computer-components)
+    - [Language History](#language-history)
+    - [Precision, logic, and computational thinking](#precision-logic-and-computational-thinking)
 
-# CSC110 AB Notes
+# CSC110AB Notes
 
 - [Module 1 - Intro to Computers & Java Programming - Slides](https://docs.google.com/presentation/d/1Uh4kWtJzO1zGRaj3QcMiP0LDjg2V5piRg-44zw-cwvE/view)
 - [Additional code examples and videos](https://github.com/wadehuber/csc110examples/tree/master/csc110examples/src/videoexamples/chapter01)
@@ -75,34 +75,35 @@
 
 [Java Foundations Notes Chapter 1](assets/java_foundations_chapter_1_notes.docx)
 
-- [Direct Online Link](https://docs.google.com/document/d/1ZLGAGG7njJu-HRA9dKjWeui0wu2UZhCFs2JggSr63JE/view) - More likely to be up-to-date
+- [Direct Online Link](https://docs.google.com/document/d/1ZLGAGG7njJu-HRA9dKjWeui0wu2UZhCFs2JggSr63JE/view) -
+  More likely to be up-to-date
 
 > This is a Direct copy-paste, all credit goes to Wade Huber
 
 ## Java Syntax & Semantics
 
-A Java **program** is made up of one or more classes.  A **class** is a template
-for the features of **objects** which contains members (methods & attributes). 
-A **method** is a procedure that is tied to an object.  It contains local
-variables and statements.  Attributes (also called fields or properties) are the
-data members of a class.  A Java **application** contains a method called
+A Java **program** is made up of one or more classes. A **class** is a template
+for the features of **objects** which contains members (methods & attributes).
+A **method** is a procedure that is tied to an object. It contains local
+variables and statements. Attributes (also called fields or properties) are the
+data members of a class. A Java **application** contains a method called
 main().
 
 The **syntax** rules of a language define the legal ways to arrange the
-identifiers and symbols (**tokens**) of a language to make a valid program.  The
-**semantics** of a program statement define what that means.  An incorrect
+identifiers and symbols (**tokens**) of a language to make a valid program. The
+**semantics** of a program statement define what that means. An incorrect
 program can still be syntactically correct!  A program does what you tell it to
-do, not what you want it to do.  The distinction between syntax and semantics
-can sometimes be hard to grasp at first.  Roughly, think of syntax as the thing
+do, not what you want it to do. The distinction between syntax and semantics
+can sometimes be hard to grasp at first. Roughly, think of syntax as the thing
 your compiler checks, while semantics are what you check when you test your
 code.
 
 ## Identifiers
 
 An **identifier** is the name given to the entities of a program, such as
-variables, classes, methods, packages, labels, constants, etc.  In Java,
-identifiers are made up of letters, digits, and the symbols _ and $. 
-Identifiers are case-sensitive and cannot begin with a digit.  That means that
+variables, classes, methods, packages, labels, constants, etc. In Java,
+identifiers are made up of letters, digits, and the symbols _ and $.
+Identifiers are case-sensitive and cannot begin with a digit. That means that
 Total, total, and TOTAL are three distinct identifiers.  (they are also an
 indication of a programmer who is not using a good coding style!).
 
@@ -115,27 +116,27 @@ indication of a programmer who is not using a good coding style!).
 
 ## Coding Style
 
-Whatever your particular coding style, you should always strive for simplicity. 
+Whatever your particular coding style, you should always strive for simplicity.
 Using coding tricks and clever code can be fun, until you have to decipher it
-later.  Any time you use an advanced feature of your language, always ask
-yourself if you could be doing it in a simpler way.  Code has a way of changing
+later. Any time you use an advanced feature of your language, always ask
+yourself if you could be doing it in a simpler way. Code has a way of changing
 over time and simple code is much easier to change that clever code.
 
-The most important thing about your coding style is that you are consistent. 
+The most important thing about your coding style is that you are consistent.
 Select an indention style and naming convention and **stick to it** throughout
-your code.   Java ignores extra whitespace, so use it to improve readability.
+your code. Java ignores extra whitespace, so use it to improve readability.
 
-I personally could not possibly care less about your coding style.  In the code
+I personally could not possibly care less about your coding style. In the code
 examples for this class I try to use 4-spaces to indent (not a tab), though I
 use a lot of different editors over time while editing the code so that may not
 always be consistent.
 
-Use **comments** for inline documentation.  They do not affect how the program
-works, but they can help others understand how your code works.  However, don’t
+Use **comments** for inline documentation. They do not affect how the program
+works, but they can help others understand how your code works. However, don’t
 go overboard with your comments - make sure they are all helpful to another
-programmer without being too verbose.  Keep in mind that variable and method
-names can also be used to write clear code.  You should try to write code that
-does not need to be documented.  Comments should be used only to provide the big
+programmer without being too verbose. Keep in mind that variable and method
+names can also be used to write clear code. You should try to write code that
+does not need to be documented. Comments should be used only to provide the big
 picture.
 
 A few other things to keep in mind that we will expound on later:
@@ -144,16 +145,15 @@ A few other things to keep in mind that we will expound on later:
 - Provide tests to demonstrate how your code works
 - Bad programmers write complex code, good programmers write simple code.
 
-
-> _Always code as if the guy who ends up maintaining your code will be a violent 
+> _Always code as if the guy who ends up maintaining your code will be a violent
 > psychopath who knows where you live. Code for readability._  
 > -- John F. Woods, comp.lang.c++
 
 ### Bad code style example
 
 Notice how in the example below, none of the variable or method names describe
-what the thing is.  And, even worse, the comments just describe the syntax, not
-the purpose of the code.  I would argue that in this example the only reason the
+what the thing is. And, even worse, the comments just describe the syntax, not
+the purpose of the code. I would argue that in this example the only reason the
 comments seem to be there are to make the code even harder to read!
 
 ```java
@@ -174,9 +174,10 @@ for (ii=0;ii<num;ii++) {
 ```
 
 ### Better code style example
+
 The example below is exactly the same as the code above other than the variable
-and method names have been changed,  the comments updated, and better use was
-made of white space.  Notice how the code is much easier to understand even
+and method names have been changed, the comments updated, and better use was
+made of white space. Notice how the code is much easier to understand even
 though there are fewer comments.
 
 ```java
@@ -206,13 +207,13 @@ for (ii=0;ii<errorCount;ii++) {
 
 There are different types of **errors** you can run across:
 
-- **Compile-time Errors:** Occur when you try to compile your program.  These
+- **Compile-time Errors:** Occur when you try to compile your program. These
   are typically syntax errors or type errors.
-- **Run-time Errors:** Occur when your code runs.  They typically lead to
+- **Run-time Errors:** Occur when your code runs. They typically lead to
   exceptions and your program will crash if the exception is not caught.
 - **Logical Errors:** are bugs, not in your code itself, but in the design of
-  your program.  These are the worst kind of errors since they can only be
-  detected by thorough testing.  Compile-time errors are the best kind of errors
+  your program. These are the worst kind of errors since they can only be
+  detected by thorough testing. Compile-time errors are the best kind of errors
   since they are easiest to spot, if not always to fix.
 
 ### Programming Pitfalls
@@ -221,19 +222,21 @@ As you write your code, try to avoid the following types of _(very common)_
 errors that programmers make:
 
 - **Random Walk Programming** is making small, random changes until your code
-  compiles.  
-  - This is a bad habit!  
-  - When you find an error you should always try
-    to figure out why the error occurred and then fix it in a way that ensures it is
-    really fixed.
-  - Keep in mind that just because your code compiles that doesn’t mean it will
-    work. 
+  compiles.
+    - This is a bad habit!
+    - When you find an error you should always try
+      to figure out why the error occurred and then fix it in a way that ensures
+      it is
+      really fixed.
+    - Keep in mind that just because your code compiles that doesn’t mean it
+      will
+      work.
 - **Cargo Cult Programming / Magical Incantations** is copying and pasting code
-  you don’t understand.  
-  - If you don’t understand code you should never include it - it could be
-    dangerous.
+  you don’t understand.
+    - If you don’t understand code you should never include it - it could be
+      dangerous.
 - **Big Ball of Mud** is “A haphazardly structured, sprawling, sloppy,
-  duct-tape-and-baling-wire, spaghetti-code jungle.”  Big balls of mud usually
+  duct-tape-and-baling-wire, spaghetti-code jungle.” Big balls of mud usually
   result when you start programming before fully understanding the requirements
   without a good design and frequently incorporate the 2 problems above.
 
@@ -241,11 +244,11 @@ errors that programmers make:
 
 ### Steps in the Development Process
 
-The programming development process consists of multiple steps.  In practice,
+The programming development process consists of multiple steps. In practice,
 there is a lot of overlap between the steps and there may be cycles where
-consecutive steps are repeated multiple times.  The important part here is not
+consecutive steps are repeated multiple times. The important part here is not
 that you always rigidly follow the steps below, but that, at some point while
-your code is under development, you visit each step.  Notice that actual coding
+your code is under development, you visit each step. Notice that actual coding
 is a small part of the overall process.
 
 - The **requirements** are an informal description of the program’s needed
@@ -255,7 +258,7 @@ is a small part of the overall process.
 - The **design** process entails translating the specification into procedures.
 - **Implementation** involves actually instantiating the design (programming)
 - **Verification** ensures that the implementation meets the requirements.
-- **Validation** ensures that the implementation meets the  specification.
+- **Validation** ensures that the implementation meets the specification.
 
 ### Program Testing
 
@@ -265,37 +268,38 @@ to find programming errors in a given environment.
 **Test cases** test a set of inputs to a program and the expected output given
 those inputs.
 
-- Test cases are created based on pre / post conditions.  
+- Test cases are created based on pre / post conditions.
 - Keep in mind that exhaustive testing (testing all possible inputs) is rarely
-  feasible.  Your test cases should check for edge cases - situations that are
-  especially difficult for your program to handle.  
-  - These may be things such as negative numbers entered as dates, strings 
-    entered when integers are expected, or adding elements to the start or end 
-    of a data structure.
- 
-Programmers often will create a **driver class** to test a class.  A driver
-class is a class that usually has just a main method.  
+  feasible. Your test cases should check for edge cases - situations that are
+  especially difficult for your program to handle.
+    - These may be things such as negative numbers entered as dates, strings
+      entered when integers are expected, or adding elements to the start or end
+      of a data structure.
+
+Programmers often will create a **driver class** to test a class. A driver
+class is a class that usually has just a main method.
 
 The main method of a driver class instantiates one or more instances of the
 class you are testing and exercises the methods to verify the class works as
 expected.
 
 - Output or exception handling can be used to detect errors.
-- _Note:_ There is nothing magical about a driver class or the name driver. 
-Driver classes are not required, but they can be a helpful tool on your
-programming toolbelt.
+- _Note:_ There is nothing magical about a driver class or the name driver.
+  Driver classes are not required, but they can be a helpful tool on your
+  programming toolbelt.
 
 **Debugging** is the process of finding the location and root cause of program
 errors.
 
 ### Types of Testing
+
 - **Functional Testing (Black-box testing):** covers some subset of the
-  requirements of the program.  The idea is to ensure the program does what it
-  is supposed to do - the output is correct for a given input.  The test cases
+  requirements of the program. The idea is to ensure the program does what it
+  is supposed to do - the output is correct for a given input. The test cases
   should be implementation independent, so if the implementation changes the
   test cases should still be applicable.
 - **Structural Testing (White-box testing):** covers the structure of the
-  program with an aim of discovering if there are any bugs in the program code. 
+  program with an aim of discovering if there are any bugs in the program code.
   With structural testing, test cases are aware of the implementation so if
   there are changes to the implementation the test cases have to change.
 
@@ -305,7 +309,7 @@ With most programs, especially in industry, you will need to perform maintenance
 to ensure that your program continues to meet the requirements. There are many
 different types of maintenance:
 
-- **Corrective maintenance** is fixing bugs and other problems as they crop up.  
+- **Corrective maintenance** is fixing bugs and other problems as they crop up.
 - **Adaptive maintenance** is required when the execution environment changes
   (OS upgrades, new technology).
 - **Perfective maintenance** involves implementing new features or enhancements
@@ -318,24 +322,24 @@ happy.
 
 ### Proof of Program Correctness
 
-There are two factors in proving a program is correct: 
+There are two factors in proving a program is correct:
 
 1. Partial Correctness
-   - [ ] Does the program satisfy the pre-conditions? 
-   - [ ] Does the program satisfy the post-conditions? 
-2. Termination 
-   - [ ] Does the program end?
+    - [ ] Does the program satisfy the pre-conditions?
+    - [ ] Does the program satisfy the post-conditions?
+2. Termination
+    - [ ] Does the program end?
 
 A program is considered to be correct when it meets the conditions of both
 partial correctness and termination.
 
 ## Overview of Object-Oriented Programming
 
-Java is an **Object-Oriented Programming (OOP)** language.  
+Java is an **Object-Oriented Programming (OOP)** language.
 
 - That isn’t 100% true, but it is close enough for our purposes.
 
-In Object-Oriented Programming, the fundamental entity is the “**object**”.  An
+In Object-Oriented Programming, the fundamental entity is the “**object**”. An
 object has some information (**state**) & some operations (**behaviors**) and
 usually represents some real-world entity such as:
 
@@ -343,7 +347,7 @@ usually represents some real-world entity such as:
 * A window in a GUI
 * A character in a game
 
-Objects should handle their own processing and data management.  
+Objects should handle their own processing and data management.
 
 Object-Oriented languages vary widely, but typically they contain the following
 features, often called “<u>The Four Pillars of Object-Oriented Programming</u>”:
@@ -365,7 +369,7 @@ problem and there is often no “one right answer”.
 - In practice, there are usually multiple ways to solve a problem, with a few of
   them being good choices.
 - There are also lots of ways to poorly solve a problem, which is why experience
-  is your best friend when it comes to programming.  The more you practice the
+  is your best friend when it comes to programming. The more you practice the
   better you will get.
 
 # Google Slides
@@ -385,7 +389,8 @@ problem and there is often no “one right answer”.
 - Programs are written using programming language
 - A **programming language** is a set of words and symbols (tokens) that we use
   to write programs
-- Each programming language has a **syntax** that describes how the tokens of the
+- Each programming language has a **syntax** that describes how the tokens of
+  the
   language can be put together to form valid **statements**
 - The **semantics** of a program defines what the statements mean
 - A syntactically correct program may not be semantically correct!
@@ -403,7 +408,8 @@ problem and there is often no “one right answer”.
 - In this course, we will be using **Java** as our programming language of
   choice
 - Many concepts you will learn will carry over to other languages
-    - For example, most languages have for-loops, and the Java syntax is identical
+    - For example, most languages have for-loops, and the Java syntax is
+      identical
       to C & C++
 
 ---
@@ -463,9 +469,11 @@ example, here are 3 lines of code that do the same thing:
 - **Identifiers** are names chosen for things in their program
 - **Reserved words** have a predefined meaning to the language, so you cannot
   use them as identifiers
-    - See https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html
-      for a list
-- Java identifiers are made up of letters (A-Z), digits (0-9), and the underscore
+    -
+    See https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html
+    for a list
+- Java identifiers are made up of letters (A-Z), digits (0-9), and the
+  underscore
   (_) and dollar sign ($) characters
 - Java identifiers cannot begin with a digit
 - Java identifiers are **case-sensitive**
@@ -591,7 +599,8 @@ Java has a 2-step compilation process - your code is first converted into Java
 
 ## Development Environment
 
-- To write and execute your own programs, you will need a development environment
+- To write and execute your own programs, you will need a development
+  environment
 - that consists of the tools you need (**toolchain**):
     - **Editor:** create & modify your source
     - **Compiler:** convert your code to executable format
@@ -643,10 +652,12 @@ The behavior of an object may change its state
 ### Methods
 
 - Methods define the possible behaviors of the object
-- Think of calling a method as “sending a message” that asks the object to do something
+- Think of calling a method as “sending a message” that asks the object to do
+  something
     - We say the sender of the method is the **client**
 - The message contains the operations name and arguments
-- The client doesn’t care _how_ the message is handled, only that it produces an expected result
+- The client doesn’t care _how_ the message is handled, only that it produces an
+  expected result
 
 ## Objects vs Classes
 
@@ -672,7 +683,8 @@ object is an instantiation of a single class
 # Programming Basics
 
 Below are the two beginning chapters for learning Java, but the overall tree
-for all the chapters can be viewed here: <https://docs.oracle.com/javase/tutorial/java/TOC.html>
+for all the chapters can be viewed
+here: <https://docs.oracle.com/javase/tutorial/java/TOC.html>
 
 - [Object-Oriented Programming Concepts](https://docs.oracle.com/javase/tutorial/java/concepts/index.htmlhttps://docs.oracle.com/javase/tutorial/java/concepts/index.html)
 - [Java Tutorials: Language Basics](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/index.html)
@@ -851,7 +863,8 @@ gear:3
   other classes.
 - In this example, `Bicycle` is now the **superclass** of the other three
   classes.
-    - Each class can only have one superclass, but can have unlimited subclasses.
+    - Each class can only have one superclass, but can have unlimited
+      subclasses.
 
 ### Inheritance Syntax
 
@@ -963,7 +976,8 @@ Java defines the following kinds of variables:
 - **Instance Variables (Non-Static Fields)** Technically speaking, objects
   store their individual states in "non-static fields", that is, fields declared
   without the static keyword. Non-static fields are also known as _instance
-  variables_ because their values are unique to each _instance_ of a class (to each
+  variables_ because their values are unique to each _instance_ of a class (to
+  each
   object, in other words); the `currentSpeed` of one bicycle is independent of
   the `currentSpeed` of another.
 - **Class Variables (Static Fields)** A _class variable_ is any field declared
@@ -1054,9 +1068,9 @@ class ArrayDemo {
 
 - In a real-world example, you'd print out each item an an array using a looping
   construct:
-  - `for`
-  - `while`
-  - `do-while`
+    - `for`
+    - `while`
+    - `do-while`
 
 #### Output
 
@@ -1172,7 +1186,8 @@ class ArrayCopyOfDemo {
 }
 ```
 
-- Note that the second parameter of the `copyOfRange` method is the initial index
+- Note that the second parameter of the `copyOfRange` method is the initial
+  index
   of the range to be copied, **inclusively**, while the third parameter is the
   final index of the range to be copied, **exclusively**.
 - In this example, the range to be
@@ -1187,12 +1202,12 @@ Some other useful methods in `java.util.Arrays` class:
 - `sort` - Sequentially sorts.
 - `parallelSort` - Concurrently sorts.
 - `stream` - Creates a stream that uses an array as its source.
-  - ```java
+    - ```java
     java.util.Arrays.stream(copyTo).map(coffee -> coffee + " ").forEach(System.out::print);  
     ```
 - `toString` - Converts each element of the array to a string ,separates them
   with commas, then surrounds them with brackets.
-  - ```java
+    - ```java
     System.out.println(java.util.Arrays.toString(copyTo));   
     ```
 
@@ -1201,33 +1216,32 @@ Some other useful methods in `java.util.Arrays` class:
 Operators are special symbols that perform specific operations on one, two, or
 three _operands_, and then return a result.
 
-|         Operators         |                   Precedence                    |
-|:-------------------------:|:-----------------------------------------------:|
-|        **postfix**        |                 `expr++ expr--`                 |
-|         **unary**         |         `++expr --expr +expr -expr ~ !`         |
-|    **multiplicative**     |                     `* / %`                     |
-|       **additive**        |                      `+ -`                      |
-|         **shift**         |                   `<< >> >>>`                   |
-|      **relational**       |             `< > <= >= instanceof`              |
-|       **equality**        |                     `== !=`                     |
-|      **bitwise AND**      |                       `&`                       |
-| **bitwise exclusive OR**  |                       `^`                       |
-| **bitwise inclusive OR**  |                    `&#124;`                     |
-|      **logical AND**      |                      `&&`                       |
-|      **logical OR**       |                 `&#124;&#124;`                  |
-|        **ternary**        |                      `? :`                      |
-|      **assignment**       |  `= += -= *= /= %= &= ^= &#124;= <<= >>= >>>=`  |
+|        Operators         |                  Precedence                   |
+|:------------------------:|:---------------------------------------------:|
+|       **postfix**        |                `expr++ expr--`                |
+|        **unary**         |        `++expr --expr +expr -expr ~ !`        |
+|    **multiplicative**    |                    `* / %`                    |
+|       **additive**       |                     `+ -`                     |
+|        **shift**         |                  `<< >> >>>`                  |
+|      **relational**      |            `< > <= >= instanceof`             |
+|       **equality**       |                    `== !=`                    |
+|     **bitwise AND**      |                      `&`                      |
+| **bitwise exclusive OR** |                      `^`                      |
+| **bitwise inclusive OR** |                   `&#124;`                    |
+|     **logical AND**      |                     `&&`                      |
+|      **logical OR**      |                `&#124;&#124;`                 |
+|       **ternary**        |                     `? :`                     |
+|      **assignment**      | `= += -= *= /= %= &= ^= &#124;= <<= >>= >>>=` |
 
 ### Math Operators
 
-|   Operator   | Description                                            |
-|:------------:|--------------------------------------------------------|
-|    **+**     | Additive operator (also used for String concatenation) |
-|    **-**     | Subtraction operator                                   |
-|    __*__     | Multiplication operator                                |
-|    **/**     | Division operator                                      |
-|    **%**     | Remainder operator                                     |
-
+| Operator | Description                                            |
+|:--------:|--------------------------------------------------------|
+|  **+**   | Additive operator (also used for String concatenation) |
+|  **-**   | Subtraction operator                                   |
+|  __*__   | Multiplication operator                                |
+|  **/**   | Division operator                                      |
+|  **%**   | Remainder operator                                     |
 
 ### Unary Operators
 
@@ -1235,13 +1249,13 @@ Unary operators require only one operand nad perform various operations such as
 incrementing / decrementing a value by one, negating an expression, or inverting
 the value of a boolean.
 
-|  Operator  | Description                                                                                 |
-|:----------:|:--------------------------------------------------------------------------------------------|
-|     **+**      | Unary plus operator; indicates positive value (numbers are positive without this, however)  |
-|     **-**      | Unary minus operator; negates an expression                                                 |
-|     **++**     | Increment operator; increments a value by 1                                                 |
-|     **--**     | Decrement operator; decrements a value by 1                                                 |
-|     **!**      | Logical complement operator; inverts the value of a boolean                                 |
+| Operator | Description                                                                                |
+|:--------:|:-------------------------------------------------------------------------------------------|
+|  **+**   | Unary plus operator; indicates positive value (numbers are positive without this, however) |
+|  **-**   | Unary minus operator; negates an expression                                                |
+|  **++**  | Increment operator; increments a value by 1                                                |
+|  **--**  | Decrement operator; decrements a value by 1                                                |
+|  **!**   | Logical complement operator; inverts the value of a boolean                                |
 
 - Using a unary operator as a **prefix** evaluates to the incremented value.
 - Using a unary operator as the **postfix** evaluates the original value.
@@ -1250,8 +1264,8 @@ the value of a boolean.
 
 `instanceof` operator compares an object to a specified type.
 
--  You can use it to test if an object is an instance of a class, an instance of
-   a subclass, or an instance of a class that implements a particular interface.
+- You can use it to test if an object is an instance of a class, an instance of
+  a subclass, or an instance of a class that implements a particular interface.
 
 ```java
 class InstanceofDemo {
@@ -1301,10 +1315,12 @@ An **expression** is a construct made up of variables, operators, and method
 invocations, which are constructed according to the syntax of the language, that
 evaluates to a single value.
 
-Statements are roughly equivalent to sentences in natural languages. A **statement**
+Statements are roughly equivalent to sentences in natural languages. A *
+*statement**
 forms a complete unit of execution and is terminated with a semicolon **(;)**.
 
-A **block** is a group of zero or more statements between balanced braces and can be
+A **block** is a group of zero or more statements between balanced braces and
+can be
 used anywhere a single statement is allowed.
 
 ## Control Flow Statements
@@ -1760,30 +1776,31 @@ switching between programs thousands of times a second.
 
 ---
 
-After computers were invented and occupied entire rooms, engineers created 
-smaller switches called **transistors**, which in 1958 were integrated onto a 
-single chip called an **integrated circuit**, or IC. Engineers continued to make 
-transistors smaller, leading to **Moore's Law**: the doubling of IC capacity 
+After computers were invented and occupied entire rooms, engineers created
+smaller switches called **transistors**, which in 1958 were integrated onto a
+single chip called an **integrated circuit**, or IC. Engineers continued to make
+transistors smaller, leading to **Moore's Law**: the doubling of IC capacity
 roughly every 18 months, which continued for several decades.
 
-Note: Moore actually said every 2 years. And the actual trend has varied 
-from 18 months. The key is that doubling occurred roughly every two years, 
-causing much improvement over time. [Intel: Moore's Law](https://www.intel.com/content/www/us/en/silicon-innovations/moores-law-technology.html).
+Note: Moore actually said every 2 years. And the actual trend has varied
+from 18 months. The key is that doubling occurred roughly every two years,
+causing much improvement over
+time. [Intel: Moore's Law](https://www.intel.com/content/www/us/en/silicon-innovations/moores-law-technology.html).
 
-By 1971, Intel produced the first single-IC processor named the 4004, called 
-a _microprocessor_ (_micro-_ suggesting something small), having 2,300 
-transistors. New, more powerful microprocessors appeared every few years, and 
-by 2012, a single IC had several billion transistors containing multiple 
+By 1971, Intel produced the first single-IC processor named the 4004, called
+a _microprocessor_ (_micro-_ suggesting something small), having 2,300
+transistors. New, more powerful microprocessors appeared every few years, and
+by 2012, a single IC had several billion transistors containing multiple
 processors (each called a _core_).
 
-- **_A side note:_** A common way to make a PC faster is to add more RAM. A 
-  processor spends much of its time moving instructions/data between memory 
-  and storage, because not all of a program's instructions/data may fit in 
-  memory—akin to a chef who spends most of his/her time walking back and forth 
-  between a stove and pantry. Just as adding a larger table next to the stove 
-  allows more ingredients to be kept close by, a larger memory allows more 
-  instructions/data to be kept close to the processor. Moore's Law results in 
-  RAM being cheaper a few years after buying a PC, so adding RAM to a 
+- **_A side note:_** A common way to make a PC faster is to add more RAM. A
+  processor spends much of its time moving instructions/data between memory
+  and storage, because not all of a program's instructions/data may fit in
+  memory—akin to a chef who spends most of his/her time walking back and forth
+  between a stove and pantry. Just as adding a larger table next to the stove
+  allows more ingredients to be kept close by, a larger memory allows more
+  instructions/data to be kept close to the processor. Moore's Law results in
+  RAM being cheaper a few years after buying a PC, so adding RAM to a
   several-year-old PC can yield good speedups for little cost.
 
 #### Exploring Further
@@ -1802,41 +1819,41 @@ processors (each called a _core_).
 
 ---
 
-In 1978, Brian Kernighan and Dennis Ritchie at AT&T Bell Labs (which used 
-computers extensively for automatic phone call routing) published a book 
-describing a new high-level language with the simple name **C**, being named 
-after another language called B (whose name came from a language called BCPL). 
+In 1978, Brian Kernighan and Dennis Ritchie at AT&T Bell Labs (which used
+computers extensively for automatic phone call routing) published a book
+describing a new high-level language with the simple name **C**, being named
+after another language called B (whose name came from a language called BCPL).
 C became the dominant programming language in the 1980s and 1990s.
 
-In 1985, Bjarne Stroustrup published a book describing a C-based language 
-called **C++**, adding constructs to support a style of programming known as 
-object-oriented programming, along with other improvements. The unusual ++ part 
-of the name comes from ++ being an operator in C that increases a number, so 
+In 1985, Bjarne Stroustrup published a book describing a C-based language
+called **C++**, adding constructs to support a style of programming known as
+object-oriented programming, along with other improvements. The unusual ++ part
+of the name comes from ++ being an operator in C that increases a number, so
 the name C++ suggests an increase or improvement over C.
 
-In 1991, James Gosling and a team of engineers at Sun Microsystems (acquired by 
-Oracle in 2010) began developing the **Java** language with the intent of 
-creating a language whose executable could be ported to different processors, 
+In 1991, James Gosling and a team of engineers at Sun Microsystems (acquired by
+Oracle in 2010) began developing the **Java** language with the intent of
+creating a language whose executable could be ported to different processors,
 with the first public release in 1995.
 
-The language had a C/C++ style and for portability reasons was designed to 
-execute on a virtual machine. Java was initially intended to be run on consumer 
-appliances like interactive TVs. Web browsers like Netscape Navigator began 
-providing support for running Java programs within the browser, bringing much 
-attention to the language. The Java language continues to evolve for the 
-programming of traditional computers and consumer devices. Java should not be 
-confused with JavaScript, which is an entirely different language used for 
+The language had a C/C++ style and for portability reasons was designed to
+execute on a virtual machine. Java was initially intended to be run on consumer
+appliances like interactive TVs. Web browsers like Netscape Navigator began
+providing support for running Java programs within the browser, bringing much
+attention to the language. The Java language continues to evolve for the
+programming of traditional computers and consumer devices. Java should not be
+confused with JavaScript, which is an entirely different language used for
 developing web applications that was named similarly.
 
-A January 2022 survey ranking languages by their popularity, based on 
-programming related searches using popular search engines, yielded the 
+A January 2022 survey ranking languages by their popularity, based on
+programming related searches using popular search engines, yielded the
 following:
 
 ![](assets/language_popularity.png)
 
 ## Precision, logic, and computational thinking
 
-Many people find that programming encourages precise, logical thought that can 
-lead to better writing and speaking, clearer processes, and more. The thought 
-processes needed to build correct, precise, logical programs is sometimes called 
+Many people find that programming encourages precise, logical thought that can
+lead to better writing and speaking, clearer processes, and more. The thought
+processes needed to build correct, precise, logical programs is sometimes called
 **computational thinking** and has benefits beyond programming.

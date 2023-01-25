@@ -4,83 +4,343 @@
 
 - [General Notes](#general-notes)
 - [Zybooks](#zybooks)
-  - [Variables and Assignments](#variables-and-assignments)
-  - [Variables (Int)](#variables-int)
-    - [Variable Declarations](#variable-declarations)
-    - [Assignment Statements](#assignment-statements)
-    - [Initializing Variables](#initializing-variables)
-    - [Assignment Statement With Same Variable On Both Sides](#assignment-statement-with-same-variable-on-both-sides)
-    - [Common Errors](#common-errors)
-  - [Identifiers](#identifiers)
-    - [Rules For Identifiers](#rules-for-identifiers)
-    - [Style Guidelines For Identifiers](#style-guidelines-for-identifiers)
-    - [Java Reserved Words / Keywords](#java-reserved-words--keywords)
-  - [Arithmetic Expressions](#arithmetic-expressions)
-    - [Basics](#basics)
-    - [Evaluation of Expressions](#evaluation-of-expressions)
-  - [Arithmetic Expressions (int)](#arithmetic-expressions-int)
-    - [Style: Single Space Around Operators](#style-single-space-around-operators)
-    - [Compound Operators](#compound-operators)
-  - [Floating-point numbers (double)](#floating-point-numbers-double)
-    - [Floating-point (double) variables](#floating-point-double-variables)
-    - [Choosing a Variable Type (double vs int)](#choosing-a-variable-type-double-vs-int)
-    - [Floating-point Division By Zero](#floating-point-division-by-zero)
-    - [Manipulating Floating-point Output](#manipulating-floating-point-output)
-  - [Scientific Notation For Floating-point Literals](#scientific-notation-for-floating-point-literals)
-  - [Constant Variables](#constant-variables)
-  - [Using Math Methods](#using-math-methods)
-    - [Basics](#basics-1)
-    - [Calls in Arguments](#calls-in-arguments)
-  - [Integer Division and Modulo](#integer-division-and-modulo)
-    - [Division: Integer Rounding](#division-integer-rounding)
-    - [Division: Divide by 0](#division-divide-by-0)
-    - [Modulo (%)](#modulo-)
-  - [Type Conversions](#type-conversions)
-    - [Type Casting](#type-casting)
-    - [Common Errors](#common-errors-1)
-  - [Binary](#binary)
-    - [Base 10 Table](#base-10-table)
-    - [Base 2 Table](#base-2-table)
-  - [Characters](#characters)
-    - [Basics](#basics-2)
-    - [Getting a Character From Input](#getting-a-character-from-input)
-    - [A Character Is Internally Stored As a Number](#a-character-is-internally-stored-as-a-number)
-    - [Escape sequences](#escape-sequences)
-    - [Outputting Multiple Character Variables With One Output Statement](#outputting-multiple-character-variables-with-one-output-statement)
-    - [Common Errors](#common-errors-2)
-  - [Strings](#strings)
-    - [String Variables and Assignments](#string-variables-and-assignments)
-    - [Getting a String Without Whitespaces From Input](#getting-a-string-without-whitespaces-from-input)
-    - [Getting a String With Whitespaces From Input](#getting-a-string-with-whitespaces-from-input)
-    - [Mixing next() and nextLine()](#mixing-next-and-nextline)
-    - [Integer Overflow](#integer-overflow)
-  - [Numeric Data Types](#numeric-data-types)
-    - [Integer Numeric Data Types](#integer-numeric-data-types)
-    - [Floating-point Numeric Data Types](#floating-point-numeric-data-types)
-  - [Random Numbers](#random-numbers)
-    - [Generating a Random Number](#generating-a-random-number)
-    - [Specific ranges](#specific-ranges)
-    - [Pseudo-random](#pseudo-random)
-  - [Reading API Documentation](#reading-api-documentation)
-    - [Oracle's Java API Specification](#oracles-java-api-specification)
-    - [Class Overview](#class-overview)
-    - [Constructor Summary](#constructor-summary)
-    - [Method Summary](#method-summary)
-    - [Constructor and Method Details](#constructor-and-method-details)
-  - [Debugging](#debugging)
-  - [Style Guidelines](#style-guidelines)
-    - [Style Guide Examples](#style-guide-examples)
+    - [Variables and Assignments](#variables-and-assignments)
+    - [Variables (Int)](#variables-int)
+        - [Variable Declarations](#variable-declarations)
+        - [Assignment Statements](#assignment-statements)
+        - [Initializing Variables](#initializing-variables)
+        - [Assignment Statement With Same Variable On Both Sides](#assignment-statement-with-same-variable-on-both-sides)
+        - [Common Errors](#common-errors)
+    - [Identifiers](#identifiers)
+        - [Rules For Identifiers](#rules-for-identifiers)
+        - [Style Guidelines For Identifiers](#style-guidelines-for-identifiers)
+        - [Java Reserved Words / Keywords](#java-reserved-words--keywords)
+    - [Arithmetic Expressions](#arithmetic-expressions)
+        - [Basics](#basics)
+        - [Evaluation of Expressions](#evaluation-of-expressions)
+    - [Arithmetic Expressions (int)](#arithmetic-expressions-int)
+        - [Style: Single Space Around Operators](#style-single-space-around-operators)
+        - [Compound Operators](#compound-operators)
+    - [Floating-point numbers (double)](#floating-point-numbers-double)
+        - [Floating-point (double) variables](#floating-point-double-variables)
+        - [Choosing a Variable Type (double vs int)](#choosing-a-variable-type-double-vs-int)
+        - [Floating-point Division By Zero](#floating-point-division-by-zero)
+        - [Manipulating Floating-point Output](#manipulating-floating-point-output)
+    - [Scientific Notation For Floating-point Literals](#scientific-notation-for-floating-point-literals)
+    - [Constant Variables](#constant-variables)
+    - [Using Math Methods](#using-math-methods)
+        - [Basics](#basics-1)
+        - [Calls in Arguments](#calls-in-arguments)
+    - [Integer Division and Modulo](#integer-division-and-modulo)
+        - [Division: Integer Rounding](#division-integer-rounding)
+        - [Division: Divide by 0](#division-divide-by-0)
+        - [Modulo (%)](#modulo-)
+    - [Type Conversions](#type-conversions)
+        - [Type Casting](#type-casting)
+        - [Common Errors](#common-errors-1)
+    - [Binary](#binary)
+        - [Base 10 Table](#base-10-table)
+        - [Base 2 Table](#base-2-table)
+    - [Characters](#characters)
+        - [Basics](#basics-2)
+        - [Getting a Character From Input](#getting-a-character-from-input)
+        - [A Character Is Internally Stored As a Number](#a-character-is-internally-stored-as-a-number)
+        - [Escape sequences](#escape-sequences)
+        - [Outputting Multiple Character Variables With One Output Statement](#outputting-multiple-character-variables-with-one-output-statement)
+        - [Common Errors](#common-errors-2)
+    - [Strings](#strings)
+        - [String Variables and Assignments](#string-variables-and-assignments)
+        - [Getting a String Without Whitespaces From Input](#getting-a-string-without-whitespaces-from-input)
+        - [Getting a String With Whitespaces From Input](#getting-a-string-with-whitespaces-from-input)
+        - [Mixing next() and nextLine()](#mixing-next-and-nextline)
+        - [Integer Overflow](#integer-overflow)
+    - [Numeric Data Types](#numeric-data-types)
+        - [Integer Numeric Data Types](#integer-numeric-data-types)
+        - [Floating-point Numeric Data Types](#floating-point-numeric-data-types)
+    - [Random Numbers](#random-numbers)
+        - [Generating a Random Number](#generating-a-random-number)
+        - [Specific ranges](#specific-ranges)
+        - [Pseudo-random](#pseudo-random)
+    - [Reading API Documentation](#reading-api-documentation)
+        - [Oracle's Java API Specification](#oracles-java-api-specification)
+        - [Class Overview](#class-overview)
+        - [Constructor Summary](#constructor-summary)
+        - [Method Summary](#method-summary)
+        - [Constructor and Method Details](#constructor-and-method-details)
+    - [Debugging](#debugging)
+    - [Style Guidelines](#style-guidelines)
+        - [Style Guide Examples](#style-guide-examples)
 
 # General Notes
 
-[![](https://yt3.ggpht.com/CVHEVOn-c21b6FTTOOhZH71ZbEw8x1Vr4BZPWGn2y7E1e19Yu55T_gKaKbplyhOraY3Bhxc-=s48-c-k-c0x00ffffff-no-rj)](https://www.youtube.com/watch?v=FZhZgLF-2L4 "Java Math and random classes")
+- [Google Slides](https://docs.google.com/presentation/d/1H4x2F5zfKl64COv9tNgNBcUs3RZ0raCSUOOjcgMgFdo/view#slide=id.p)
+- [Additional Notes For Module 2](https://docs.google.com/document/d/1YcYr9PvM_yHjbB-DpzHxr5OmjoG2wLlc0dPreeo92-o/view)
+- [Q&A for General Questions](https://docs.google.com/document/d/1ntO2lkE_8j-sdOQeUGXcUIlAcGQt4ERqtBfuZnP_mCw/view)
+-
 
-- YouTube video covering Java Math & Random classes 
+YouTube: [Java Math & Random classes](https://www.youtube.com/watch?v=FZhZgLF-2L4 "Java Math and random classes")
+-
+YouTube: [Data Types and Variables](https://www.youtube.com/watch?v=K2W39Fzf2s0)
+-
+YouTube: [Variables, Data Types and Arithmetic Operators](https://www.youtube.com/watch?v=GRCA1N7Iono)
+
+- YouTube: [Programming With Mosh](https://www.youtube.com/watch?v=eIrMbAQSU34)
+    - Full beginners guide.
+    - Skip to [25:24](https://youtu.be/eIrMbAQSU34?t=1524) to see him talk about
+      **types**.
 
 **Incremental development** is the process of writing, compiling, and testing a
 small amount of code, then writing, compiling, and testing a small amount more
 (an incremental amount), and so on.
 
+# Google Slides - Data and Expressions
+
+* A **string** is a sequence of characters
+* A **string literal** is a string of characters surrounded by double quotes
+    * `"Hello, world!"`
+    * `"abc123XYZ"`
+    * `"S"`
+* Most programming languages have some way of representing strings of characters
+* In Java, every string is an object of the `String` class
+    * Including string literals - the string literals in your Java code are
+      converted to string objects by the compiler
+
+---
+
+## `Print` and `Println`
+
+`System.out.print` & `System.out.println` are both methods used to display
+strings to the console.
+
+- `System` is a class that provides outer useful methods.
+- `out` is a field of the `System` class that represents the **standard output
+  stream**.
+    - On Unix systems & in C, this is called `stdout`
+    - The type of out is `PrintStream`
+- `print` does **not** add a new line at the end of the string
+- `println` adds a new line at the end of the string
+
+## String Concatenation
+
+**Concatenation** means joining two things together.
+
+```java
+System.out.println("String" + "Concatenation");         // -> StringConcatenation
+System.out.println("Where is the key? " + "-The Guy");  // -> Where is they key? - The Guy
+System.out.println("The number is: " + 2);           // -> The number is: 2
+```
+
+- If _both_ operands are numeric, it performs arithmetic.
+- If the first operand is a string, concatenation is performed.
+    - The other operands are converted to string if they're not already.
+- Concatenation operator is evaluated left-to-right
+    - Use parenthesis to force order.
+
+_Note: When copy-pasting quotes from word processors, the quotes are often
+changed to "smart quotes" that will cause compile errors._
+
+## Escape Sequences
+
+**Escape sequences** let you add special characters (or disallowed characters)
+inside a string. The escape sequence starts with a **backslash character (\\)**,
+followed by a code character.
+
+- `\"`
+- `\'`
+- `\\`
+
+Escape sequences represent a _single_ character.
+
+- `\n` - newline
+- `\t` - tab
+- `\r` - carriage return
+- `\b` - backspace
+
+## Excursion: Binary, Octal (Base 8), & Hexadecimal (Base 16)
+
+- Binary numbers only have 0 or 1 as a digit
+  - **11** is represented as `1011` in binary.
+  - **92** is represented as `01011100` in binary.
+- Hexadecimal numbers have **16** digits: `0-9` and `A-F` (representing `10-15`)
+  - Hexadecimal digits can be used as a more concise representation of binary
+  - One hex digit can be represented as 4 binary digits.
+  - **11** is represented as `8` in hexadecimal
+  - **92** is represented as `5C` in hexadecimal
+- Octal numbers have **8** valid digits: `0-8`
+
+## Computer Memory
+
+- A computer only works with binary values - **1 (on)** and **0 (off)**
+  - Each binary value is called a **bit**.
+  - 8 bites make up a **byte**.
+- Computer memory is divided into **words**
+  - The size of a word is dependent on the architecture of the CPU
+  - 64-bit machines tend to use 8-byte words
+- The more bytes that are used to store a value, the larger that value can be
+- Memory locations have an associated address, but that is largely not something 
+  you have to worry about with Java
+
+## Variables
+
+- A **variable** is a name for a location in memory where a value is stored
+- A variable has type which tells the compiler how to interpret the bytes it
+  stores
+- Variables need to be **declared** before they can be used, and can be 
+  **initialized** (given a value when it's declared).
+  - Declaring tells the compiler the name and _type_ of the variable.
+
+### Java's Primitive Data Types
+
+- Primitive types are the most basic data types in Java
+- Primitive data types hold a value (and that’s it)
+  - They are not objects 
+  - They do not provide additional methods
+- Java defines 8 primitive data types 
+  - Four integer types
+  - Two floating point numbers
+  - A character type
+  - A boolean type
+
+
+|  Data Type  | Description                                                                                | 
+|:-----------:|:-------------------------------------------------------------------------------------------|
+|  **byte**   | an **8-bit** integer, values between **-128** and **127**, which is (**-27** and **27-1**) |
+|  **short**  | a **16-bit** integer, value between **-23,768** and **32,767** (**-215** and **215-1**)    |
+|   **int**   | a **32-bit** integer, values between **-231** and **231-1**                                |
+|  **long**   | a **64-bit** integer, values between **-263** and **263-1**                                |
+|  **float**  | a **32-bit IEEE 784** floating point number                                                |
+| **double**  | a **64-bit IEEE 784** floating point number (double precision)                             |
+| **boolean** | represents **1-bit** (`true` or `false`) (the actual size is not specified)                |
+|  **char**   | **16-bit Unicode** character in the range of **\u0000 (0)** to **\uffff(65, 535)**         |
+
+## Character Sets
+
+- A **character set** is an ordered list of characters, with each character
+corresponding to a unique number.
+- A char variable in Java can store any character from the **Unicode character
+  set**
+- The Unicode character set uses sixteen bits per character
+  - It is an international character set, containing symbols and characters from
+    many world languages
+- The **ASCII character set** is older and smaller than Unicode
+  - The ASCII characters are a subset of the Unicode character set, including:
+    - Uppercase letters: **A-Z**
+    - Lowercase letters: **a-z**
+    - Digits: **0-9**
+    - Punctuation: period (**.**), semi-colon (**;**), etc
+    - Special symbols: **&, |, \ …**
+    - Control characters: **carriage return, tab**
+
+## Constants
+
+A **constant** (also called a **final variable**) is similar to a variable,
+except that its value cannot change:
+
+```java
+final int MAX = 100;
+final int DAYS_IN_WEEK = 7;
+```
+
+- You'll get a compiler warning if you try to modify a constant.
+- Convention is to use all capital letters & underscores for naming constants
+- Constants facilitate program maintenance
+- Constants indicate that a value should not change
+
+## Assignment
+
+An **assignment statement** changes the value of a variable. The **assignment
+operator** is the `=` sign.
+
+```java
+numberOfCups = recipeAmount + (numberOfGuests ** 2);  // Assigning the right-side to numberOfCups
+```
+
+- You can only assign values of the same type as the variable.
+
+## Java Operator Precedence
+
+| Precedence</br>Level |     Operator      |                   Operation </br>Name                   | Associativity |
+|:--------------------:|:-----------------:|:-------------------------------------------------------:|:-------------:|
+|          1           |    **+</br>-**    |               unary plus</br>unary minus                | right-to-left |
+|          2           | __*</br>/</br>%__ | multiplication</br>division</br>remainder</br>(modulus) | left-to-right |
+|          3           | **+</br>-</br>+** |    addition</br>subtraction</br>string concatenation    | left-to-right |
+|          4           |         =         |                       assignment                        | right-to-left |
+
+## Data Conversion
+
+Conversions must be handled carefully to avoid losing information.
+
+- **Widening conversions** are safest because they tend to go from a small data
+  type to a larger one.
+  - Such as a `short` to an `int`
+- **Narrowing Conversions** can lose information because they tend to go from a 
+  large data type to a smaller one.
+- Three ways in Java that data conversions occur:
+  - Assignment conversion
+    - Only **widening conversions** can happen via assignment.
+  - Promotion
+  - Casting
+
+### Widening Conversions
+
+|  From   |                      To                      |
+|:-------:|:--------------------------------------------:|
+| `byte`  | `short`, `int`, `long`, `float`, or `double` |
+| `short` |     `int`, `long`, `float`, or `double`      |
+| `char`  |     `int`, `long`, `float`, or `double`      |
+|  `int`  |         `long`, `float`, or `double`         |
+| `long`  |             `float`, or `double`             |
+| `float` |                `double`                      |
+
+### Narrowing Conversions (usually avoid)
+
+|  From   |                         To                         |
+|:-------:|:--------------------------------------------------:|
+| `byte`  |                       `char`                       |
+| `short` |                  `byte` or `char`                  |
+| `char`  |             `byte`, `short`, or `char`             |
+|  `int`  |         `byte`, `short`, `char`, or `int`          |
+| `long`  |     `byte`, `short`, `char`, `int`, or `long`      |
+| `float` | `byte`, `short`, `char`, `int`, `long`, or `float` |
+
+## Promotion
+
+- Promotion happens automatically when operators in expressions convert their
+  operands
+- For example, if `sum` is a `double` and `count` is an `int`, the value of 
+  `count` is converted to a floating point value to perform the following calculation:
+
+```java
+result = sum / count;
+    double   <-  double/int
+```
+
+## Casting
+
+```java
+double result;
+int total = 5;
+int count = 2;
+result = (double) total / count;
+    double     <-  double  int
+```
+
+## Scanner
+
+Provides methods for reading input values of various types.
+
+- Keyboard input is represented by the `System.in` object.
+- `Scanner` class is found in the `java.util` class library, and must be imported
+  into a program to be used.
+
+## Input Tokens
+
+Unless specified otherwise, white space is used to separate the elements
+(called **tokens**) of the input.
+
+- White space includes space characters, tabs, new line characters
+- The `next` method of the `Scanner` class reads the next input token and
+  returns it as a string
 
 # Zybooks
 
@@ -237,7 +497,8 @@ Either convention can be chosen, just be consistent with the chosen one.
 
 - Create meaningful identifier names that self-describe an item's purpose.
 - Avoid abbreviations unless they're well-known like `num` in `numPassengers`.
-- Do not use overly long identifier names like `averageAgeOfUclaGraduateStudent`.
+- Do not use overly long identifier names
+  like `averageAgeOfUclaGraduateStudent`.
 
 ### Java Reserved Words / Keywords
 
@@ -267,7 +528,8 @@ Either convention can be chosen, just be consistent with the chosen one.
 
 ### Basics
 
-- An **expression** is any individual item or combination of items, like variables,
+- An **expression** is any individual item or combination of items, like
+  variables,
   literals, operators, and parentheses, that evaluates to a value, often used on
   the right side of an assignment statement: `2 * (x + 1)`
 - A **literal** is a specific value in code like `2`. An `operator` is a symbol
@@ -307,14 +569,22 @@ programming as **precedence rules**:
 <u>Calories burned by men and
 women</u>: [Source](https://web.archive.org/web/20120422154143/http://fitnowtraining.com/2012/01/formula-for-calories-burned/)
 
-> Men: Calories = [(Age * 0.2017) + (Weight * 0.09036) + (Heart Rate * 0.6309) - 55.0969] * Time / 4.184 \
-> Women: Calories = [(Age * 0.074) - (Weight * 0.05741) + (Heart Rate * 0.4472) - 20.4022] * Time / 4.184
+> Men:
+>
+Calories = [(Age * 0.2017) + (Weight * 0.09036) + (Heart Rate * 0.6309) - 55.0969] *
+> Time / 4.184 \
+> Women:
+>
+Calories = [(Age * 0.074) - (Weight * 0.05741) + (Heart Rate * 0.4472) - 20.4022] *
+> Time / 4.184
 
 Converted To Programming Notation:
 
-> caloriesMan = ( (ageYears * 0.2017) + (weightPounds * 0.09036) + (heartBPM * 0.6309) - 55.0969 ) * timeMinutes /
+> caloriesMan = ( (ageYears * 0.2017) + (weightPounds * 0.09036) + (heartBPM *
+> 0.6309) - 55.0969 ) * timeMinutes /
 > 4.184  \
-> caloriesWoman = ( (ageYears * 0.074) - (weightPounds * 0.05741) + (heartBPM * 0.4472) - 20.4022 ) * timeMinutes /
+> caloriesWoman = ( (ageYears * 0.074) - (weightPounds * 0.05741) + (heartBPM *
+> 0.4472) - 20.4022 ) * timeMinutes /
 > 4.184
 
 ## Arithmetic Expressions (int)
@@ -407,7 +677,8 @@ System.out.printf("%.2f", myFloat);
 ## Scientific Notation For Floating-point Literals
 
 Scientific notation is useful for representing floating-point numbers that
-are much greater than or much less than **0**, such as **6.02 x 10<sup>23</sup>**
+are much greater than or much less than **0**, such as **6.02 x 10<sup>23</sup>
+**
 
 To write a floating-point literal using **scientific notation**, write an **e**
 preceding the power-of-10 exponent:
@@ -584,7 +855,8 @@ number into a memory location.
 
 A variable of **char** type can store a single character like the letter `m`.
 
-- A **character literal** is surrounded with single quotes: `char myChar = 'm';`.
+- A **character literal** is surrounded with single
+  quotes: `char myChar = 'm';`.
 
 ### Getting a Character From Input
 
@@ -940,28 +1212,28 @@ A formula for determining the ranges:
    ```java
    myRandNum = randGen.nextInt(6) + 10;
    ```
-   
+
 ---
-   
+
 ### Pseudo-random
 
-The integers generated by a Random object are known as pseudo-random. 
-"Pseudo" means "not actually, but having the appearance of". Internally, 
-the `nextInt()` method has an equation to compute the next "random" integer 
-from the previous one, (invisibly) keeping track of the previous one. For 
-the first call to `nextInt()`, no previous random integer exists, so the method 
-uses an integer known as the seed. `Random()` seeds the pseudo-random number 
-generator with a number based on the current time. Since, the time is different 
+The integers generated by a Random object are known as pseudo-random.
+"Pseudo" means "not actually, but having the appearance of". Internally,
+the `nextInt()` method has an equation to compute the next "random" integer
+from the previous one, (invisibly) keeping track of the previous one. For
+the first call to `nextInt()`, no previous random integer exists, so the method
+uses an integer known as the seed. `Random()` seeds the pseudo-random number
+generator with a number based on the current time. Since, the time is different
 for each program run, the program will get a unique sequence.
 
-Reproducibility is important for testing some programs. (Players of classic 
-arcade games like Pac-man may notice that the seemingly-random actions of 
-objects actually follow the same pattern every time the game is played, 
-allowing players to master the game by repeating the same winning actions). 
+Reproducibility is important for testing some programs. (Players of classic
+arcade games like Pac-man may notice that the seemingly-random actions of
+objects actually follow the same pattern every time the game is played,
+allowing players to master the game by repeating the same winning actions).
 
-A programmer can specify the seed when the Random object is created, as in 
-`Random randGen = new Random(5);` or using the `setSeed()` method, as in 
-`randGen.setSeed(5);` With a specific seed, each program run will yield the 
+A programmer can specify the seed when the Random object is created, as in
+`Random randGen = new Random(5);` or using the `setSeed()` method, as in
+`randGen.setSeed(5);` With a specific seed, each program run will yield the
 same sequence of pseudo-random numbers.
 
 
@@ -972,40 +1244,41 @@ same sequence of pseudo-random numbers.
 ### Oracle's Java API Specification
 
 The [Oracle's Java API Specification](https://docs.oracle.com/en/java/javase/12/docs/api/index.html)
-provides detailed documents describing how to use the extensive set of classes 
+provides detailed documents describing how to use the extensive set of classes
 Java provides for creating programs.
 
 - The class documentation is known as an **Application Programming Interface
   (API)**.
 
-The main page of the Java documentation lists all Java modules. 
+The main page of the Java documentation lists all Java modules.
 
-- A **module** is a group of related packages. 
-- A **package** is a group of related classes. 
+- A **module** is a group of related packages.
+- A **package** is a group of related classes.
 
-Organizing classes into modules and packages helps programmers find needed 
-classes. 
+Organizing classes into modules and packages helps programmers find needed
+classes.
 
 - _Ex: The java.base module defines Java's foundational packages and APIs._
 - [java.base module documentation](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html)
 
 ### Class Overview
 
-The Scanner class is located in the package `java.util`. The Java documentation 
-for a class consists of four main elements. The following uses the Scanner 
-class to illustrate these documentation elements. The documentation for the 
-Scanner is located at: [Scanner class documentation](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/util/Scanner.html).
+The Scanner class is located in the package `java.util`. The Java documentation
+for a class consists of four main elements. The following uses the Scanner
+class to illustrate these documentation elements. The documentation for the
+Scanner is located
+at: [Scanner class documentation](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/util/Scanner.html).
 
-**Class overview:** The first part of the documentation provides an overview of 
-the class, describing the class' functionality and providing examples of how the 
+**Class overview:** The first part of the documentation provides an overview of
+the class, describing the class' functionality and providing examples of how the
 class is commonly used in a program.
 
 ![](assets/scanner_class_overview.png)
 
-- The package in which a class is located appears immediately above the class 
+- The package in which a class is located appears immediately above the class
   name.
-  - This package is located in `java.util`
-- To use a class, a program must include an import statement that informs the 
+    - This package is located in `java.util`
+- To use a class, a program must include an import statement that informs the
   compiler of the class' location.
 
 ```java
@@ -1014,21 +1287,21 @@ import packageName.ClassName;
 
 ### Constructor Summary
 
-**Constructor summary:** Provides a list and brief description of the 
+**Constructor summary:** Provides a list and brief description of the
 constructors that can be used to create objects of the class.
 
 ![](assets/constructors.png)
 
 - When you use `scnr = new Scanner(System.in);`, you're constructing a `Scanner`
   object.
-  - `System.in` is a `InputStream` object automatically created when a Java
-    program executes.
-  - The matching constructor is `Scanner(InputStream source`.
+    - `System.in` is a `InputStream` object automatically created when a Java
+      program executes.
+    - The matching constructor is `Scanner(InputStream source`.
 
 ### Method Summary
 
-**Method summary:** Provides a list and brief description of all methods that 
-can be called on objects of the class. The Java documentation only lists the 
+**Method summary:** Provides a list and brief description of all methods that
+can be called on objects of the class. The Java documentation only lists the
 public methods that a program may use.
 
 ![](assets/methods.png)
@@ -1038,7 +1311,7 @@ public methods that a program may use.
 **Constructor and Method Details:** The documentation also provides a detailed
 description of all constructors and methods for the class.
 
-For each method, the documentation provides the method declaration, a 
+For each method, the documentation provides the method declaration, a
 description of the method, a list of parameters (if any), a description of the
 method's return value, and a list of possible exceptions the method may throw.
 
@@ -1046,7 +1319,7 @@ method's return value, and a list of possible exceptions the method may throw.
 
 ## Debugging
 
-- **Debugging:** The process of determining and fixing the cause of a problem 
+- **Debugging:** The process of determining and fixing the cause of a problem
   in a computer program.
 - **Troubleshooting:** Another word for debugging.
 
@@ -1054,13 +1327,13 @@ Some good steps for methodically debugging:
 
 1. Predict a _possible_ cause of the problem
 2. Conduct a test to validate that cause
-   - _Note that a temporary statement commonly has a "FIXME" comment to remind_
-     the programmer to delete this statement.
-     - `// FIXME delete`
+    - _Note that a temporary statement commonly has a "FIXME" comment to remind_
+      the programmer to delete this statement.
+        - `// FIXME delete`
 3. Repeat
 
-_A common error among new programmers is to try to debug without a methodical 
-process, instead staring at the program, or making random changes to see if 
+_A common error among new programmers is to try to debug without a methodical
+process, instead staring at the program, or making random changes to see if
 the output is improved._
 
 Some methods for validating possible causes:
@@ -1068,26 +1341,26 @@ Some methods for validating possible causes:
 - Manually set a variable to a value.
 - Insert print statements to observe variable values.
 - Comment out unused code.
-- Visually inspect the code (not every test requires modifying/running the 
+- Visually inspect the code (not every test requires modifying/running the
   code).
 
-Statements inserted for debugging must be created and removed with care. 
+Statements inserted for debugging must be created and removed with care.
 
-- A common error is to forget to remove a debug statement, such as a temporary 
-  statement that manually sets a variable to a value. Left-aligning such a 
+- A common error is to forget to remove a debug statement, such as a temporary
+  statement that manually sets a variable to a value. Left-aligning such a
   statement and/or including a FIXME comment can help the programmer remember.
-- Another common error is to use `/* */` to comment out code that itself 
-  contains `/* */` characters. The first `*/` ends the comment before intended, 
+- Another common error is to use `/* */` to comment out code that itself
+  contains `/* */` characters. The first `*/` ends the comment before intended,
   which usually yields a syntax error when the second `*/` is reached or sooner.
 
 ## Style Guidelines
 
-Each programming team, whether a company, open source project, or a classroom, 
-may have **style guidelines** for writing code. 
+Each programming team, whether a company, open source project, or a classroom,
+may have **style guidelines** for writing code.
 
-- **K&R style** for braces and indents is named after C language creators 
-  Kernighan and Ritchie. 
-- **Stroustrup style** for braces and indents is named after C++ language 
+- **K&R style** for braces and indents is named after C language creators
+  Kernighan and Ritchie.
+- **Stroustrup style** for braces and indents is named after C++ language
   creator Bjarne Stroustrup.
 - [Google's Java Style Guidelines](https://google.github.io/styleguide/javaguide.html)
 
