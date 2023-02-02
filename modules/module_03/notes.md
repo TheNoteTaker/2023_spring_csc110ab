@@ -43,7 +43,7 @@ int value = 23;
 int count = 4;
 
 count < 8       // evaluates to true
-value<= num     // evaluates to true
+value <= num     // evaluates to true
 num <= num      // evaluates to true
 1516 >= value   // evaluates to true
 count == 8      // evaluates to false
