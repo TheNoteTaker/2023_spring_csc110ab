@@ -1,5 +1,29 @@
 # Module 4 - Loops
 
+<!-- TOC -->
+* [Module 4 - Loops](#module-4---loops)
+* [General Notes](#general-notes)
+  * [Sentinel Values](#sentinel-values)
+  * [Increments](#increments)
+* [While Loop](#while-loop)
+  * [Example 1](#example-1)
+  * [Example 2](#example-2)
+  * [Example 3 - GCD](#example-3---gcd)
+  * [Common Errors](#common-errors)
+* [For Loops](#for-loops)
+  * [Example 1](#example-1-1)
+  * [Example 2](#example-2-1)
+  * [Choosing Between `for` and `while` Loops](#choosing-between-for-and-while-loops)
+  * [Loop Style Issues](#loop-style-issues)
+    * [Starting With 0](#starting-with-0)
+    * [The ++ Operators](#the--operators)
+    * [In-loop declaration of `i`](#in-loop-declaration-of-i)
+  * [Common Errors / Good Practice](#common-errors--good-practice)
+    * [AVOID THESE LOOP VARIATIONS](#avoid-these-loop-variations)
+* [Do-while Loops](#do-while-loops)
+  * [Example 1](#example-1-2)
+<!-- TOC -->
+
 # General Notes
 
 A **loop** is a program construct that repeatedly executes the loop's statements

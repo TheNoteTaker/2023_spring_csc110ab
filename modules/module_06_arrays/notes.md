@@ -1,5 +1,21 @@
 # Module 6 - Arrays
 
+<!-- TOC -->
+* [Module 6 - Arrays](#module-6---arrays)
+* [General Notes](#general-notes)
+* [Zybooks](#zybooks)
+  * [Array Concept (General)](#array-concept--general-)
+  * [Array Declarations and Accessing Elements](#array-declarations-and-accessing-elements)
+    * [Using An Expression For An Array Index](#using-an-expression-for-an-array-index)
+  * [Loops and arrays](#loops-and-arrays)
+  * [Array Initialization](#array-initialization)
+  * [Iterating Through An Array Using Loops](#iterating-through-an-array-using-loops)
+    * [Common Error: Accessing Out Of Range Array Element](#common-error--accessing-out-of-range-array-element)
+  * [Multiple Arrays](#multiple-arrays)
+    * [Example](#example)
+      * [Output](#output)
+<!-- TOC -->
+
 # General Notes
 
 # Zybooks

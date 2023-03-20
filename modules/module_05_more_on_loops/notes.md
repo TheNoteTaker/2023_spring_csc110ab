@@ -1,5 +1,23 @@
 # Module 5 - Loops and Strings
 
+<!-- TOC -->
+* [Module 5 - Loops and Strings](#module-5---loops-and-strings)
+* [General Notes](#general-notes)
+  * [Domains](#domains)
+* [Loops and Strings](#loops-and-strings)
+  * [Example 1](#example-1)
+  * [Example 2 - Replace Double Spaces](#example-2---replace-double-spaces)
+* [Nested Loops](#nested-loops)
+  * [Example 1](#example-1-1)
+  * [Example 2](#example-2)
+* [Developing Programs Incrementally](#developing-programs-incrementally)
+* [Variable Name Scope](#variable-name-scope)
+  * [Scope of Names](#scope-of-names)
+  * [For Loop Index](#for-loop-index)
+    * [Common Error](#common-error)
+* [Enumerations](#enumerations)
+<!-- TOC -->
+
 # General Notes
 
 ## Domains

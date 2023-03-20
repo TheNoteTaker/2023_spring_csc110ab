@@ -1,5 +1,19 @@
 # Module 7 - Arrays, Enhanced Loops, and Comparing
 
+<!-- TOC -->
+* [Module 7 - Arrays, Enhanced Loops, and Comparing](#module-7---arrays-enhanced-loops-and-comparing)
+* [General Notes](#general-notes)
+* [Zybooks](#zybooks)
+  * [Swapping Two Variables (General)](#swapping-two-variables--general-)
+  * [Modifying & Copying / Comparing Arrays](#modifying--copying--comparing-arrays)
+    * [Modifying Arrays](#modifying-arrays)
+    * [Copying Arrays](#copying-arrays)
+  * [Debugging Example: Reversing an Array](#debugging-example--reversing-an-array)
+  * [Two-dimensional Arrays](#two-dimensional-arrays)
+  * [Enhanced for loop: Arrays](#enhanced-for-loop--arrays)
+    * [Common Error: Modifying The Loop Variable](#common-error--modifying-the-loop-variable)
+<!-- TOC -->
+
 # General Notes
 
 # Zybooks

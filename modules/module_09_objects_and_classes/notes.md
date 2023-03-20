@@ -1,5 +1,36 @@
 # Module 9 - Objects and Classes
 
+<!-- TOC -->
+* [Module 9 - Objects and Classes](#module-9---objects-and-classes)
+* [General Notes](#general-notes)
+* [ZyBooks](#zybooks)
+  * [Objects: Introduction](#objects--introduction)
+    * [High-level Object Examples](#high-level-object-examples)
+  * [Abstraction / Information Hiding](#abstraction--information-hiding)
+* [Using a Class](#using-a-class)
+  * [Classes Intro: Public Member Methods](#classes-intro--public-member-methods)
+  * [Using a Class](#using-a-class-1)
+  * [Defining a Class](#defining-a-class)
+    * [Example: RunnerInfo Class](#example--runnerinfo-class)
+  * [Mutators, Accessors, and Private Helpers](#mutators-accessors-and-private-helpers)
+    * [Mutators and Accessors](#mutators-and-accessors)
+    * [Private Helper Methods](#private-helper-methods)
+  * [Initialization and Constructors](#initialization-and-constructors)
+    * [Field Initialization](#field-initialization)
+    * [Constructors](#constructors)
+  * [Exploring Further](#exploring-further)
+  * [Choosing Classes to Create](#choosing-classes-to-create)
+    * [Unified Modeling Language (UML) Example](#unified-modeling-language--uml--example)
+  * [Defining `main()` in a Programmer-defined Class](#defining-main-in-a-programmer-defined-class)
+  * [Unit Testing (Classes)](#unit-testing--classes-)
+    * [Testbenches](#testbenches)
+      * [Features of a Good Testbench](#features-of-a-good-testbench)
+    * [Regression Testing](#regression-testing)
+    * [Erroneous Unit Tests](#erroneous-unit-tests)
+    * [Exploring Further](#exploring-further-1)
+  * [Constructor Overloading](#constructor-overloading)
+<!-- TOC -->
+
 # General Notes
 
 # ZyBooks
