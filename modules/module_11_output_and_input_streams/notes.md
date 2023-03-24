@@ -1,12 +1,62 @@
-## Module 11 - Output and Input Streams
+# Module 11 - Output and Input Streams
 
-## General Notes
+<!-- TOC -->
+* [Module 11 - Output and Input Streams](#module-11---output-and-input-streams)
+* [General Notes](#general-notes)
+* [Module Content](#module-content)
+* [ZyBooks](#zybooks)
+  * [Output Streams](#output-streams)
+    * [Input Streams](#input-streams)
+    * [Byte stream, throws clause, and Scanner](#byte-stream-throws-clause-and-scanner)
+    * [Exploring Further](#exploring-further)
+    * [Conclusion](#conclusion)
+  * [Output formatting](#output-formatting)
+    * [`printf()` and `format()` methods](#printf-and-format-methods)
+      * [Format specifiers for the `printf()` and `format()` methods](#format-specifiers-for-the-printf-and-format-methods)
+    * [Floating-point Values & Formatting](#floating-point-values--formatting)
+      * [Example Output Formatting for Floating-point Numbers](#example-output-formatting-for-floating-point-numbers)
+        * [Output:](#output-)
+    * [Integer Values and Formatting](#integer-values-and-formatting)
+      * [Example Output Formatting for Integers](#example-output-formatting-for-integers)
+        * [Output:](#output--1)
+    * [Strings](#strings)
+    * [Flushing output](#flushing-output)
+      * [Importance of Flushing output](#importance-of-flushing-output)
+      * [Situations when flushing output may be necessary](#situations-when-flushing-output-may-be-necessary)
+      * [Flushing the buffer](#flushing-the-buffer)
+      * [Additional Information](#additional-information)
+    * [Exploring Further](#exploring-further-1)
+  * [Streams using Strings](#streams-using-strings)
+    * [Scanner object with a String](#scanner-object-with-a-string)
+      * [Reading From a String Using a Scanner Object](#reading-from-a-string-using-a-scanner-object)
+    * [Using String streams to process input text](#using-string-streams-to-process-input-text)
+      * [Using a String Stream to Process a Line of Input Text](#using-a-string-stream-to-process-a-line-of-input-text)
+    * [Using `StringWriter` and `PrintWriter` to create String streams](#using-stringwriter-and-printwriter-to-create-string-streams)
+    * [Creating a String Using Streams](#creating-a-string-using-streams)
+    * [Conclusion](#conclusion-1)
+  * [File Input](#file-input)
+    * [Opening and Reading from a File](#opening-and-reading-from-a-file)
+      * [Example Input From a File](#example-input-from-a-file)
+    * [Reading Until the End of the File](#reading-until-the-end-of-the-file)
+      * [Example: Reading a Varying Amount of Data from a File](#example--reading-a-varying-amount-of-data-from-a-file)
+    * [Example: Counting Instances of a Specific Word](#example--counting-instances-of-a-specific-word)
+    * [Exploring Further](#exploring-further-2)
+    * [Conclusion](#conclusion-2)
+  * [File Output](#file-output)
+    * [Introduction](#introduction)
+    * [Basic steps for opening and writing a file](#basic-steps-for-opening-and-writing-a-file)
+    * [Example: Writing a text file](#example--writing-a-text-file)
+    * [Example: Writing a simple HTML file](#example--writing-a-simple-html-file)
+    * [Conclusion](#conclusion-3)
+<!-- TOC -->
 
-## Module Content
+# General Notes
 
-## ZyBooks
+# Module Content
 
-### Output Streams
+# ZyBooks
+
+## Output Streams
 
 - Programs need a way to output data to a screen, file, or elsewhere.
 - `OutputStream` is a class that supports output.
@@ -25,7 +75,7 @@
   with the screen.
   earlier section.
 
-#### Input Streams
+### Input Streams
 
 - Programs need to receive input data, whether from a keyboard,
   touchscreen, or elsewhere.
@@ -63,7 +113,7 @@ public class InputStreamReader {
 }
 ```
 
-#### Byte stream, throws clause, and Scanner
+### Byte stream, throws clause, and Scanner
 
 - A byte stream is used by programs to input or output 8-bits (a
   byte).
@@ -83,7 +133,7 @@ public class InputStreamReader {
   constructor.
 - `System.in.read()` returns `-1` when data is no longer available.
 
-#### Exploring Further
+### Exploring Further
 
 - [Oracle's OutputStream class specification](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/io/OutputStream.html)
 - [Oracle's PrintStream class specification](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/io/PrintStream.html)
@@ -91,7 +141,7 @@ public class InputStreamReader {
 - [Oracle's Java tutorials on I/O Streams](http://docs.oracle.com/javase/tutorial/essential/io/streams.html)
 - [Oracle's InputStream class specification](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/io/InputStream.html)
 
-#### Conclusion
+### Conclusion
 
 - Output and input streams are essential for programs to output and
   receive data.
@@ -104,9 +154,9 @@ public class InputStreamReader {
 - The `Scanner` class is often used to extract strings or integers
   from an input stream.
 
-### Output formatting
+## Output formatting
 
-#### `printf()` and `format()` methods
+### `printf()` and `format()` methods
 
 - Programmer can adjust the way that a program's output appears, a task known as
   **output formatting**
@@ -122,7 +172,7 @@ public class InputStreamReader {
   that indicates the value type to be printed. Ex: `%d` indicates an integer
   type, and `%s` indicates a string type
 
-##### Format specifiers for the `printf()` and `format()` methods
+#### Format specifiers for the `printf()` and `format()` methods
 
 | Format specifier | Data type(s)                 | Notes                                                 |
 |:----------------:|:-----------------------------|:------------------------------------------------------|
@@ -136,7 +186,7 @@ public class InputStreamReader {
 |      **%%**      |                              | Prints the "`%`" character                            |
 |      **%n**      |                              | Prints the platform-specific new-line character       |
 
-#### Floating-point Values & Formatting
+### Floating-point Values & Formatting
 
 - Formatting floating-point output is commonly done using **sub-specifiers**
 - A sub-specifier provides formatting options for a format specifier and are
@@ -158,7 +208,7 @@ public class InputStreamReader {
 
 --- 
 
-##### Example Output Formatting for Floating-point Numbers
+#### Example Output Formatting for Floating-point Numbers
 
 ```java
 import java.util.Scanner;
@@ -186,7 +236,7 @@ public class FlyDrive {
 }
 ```
 
-###### Output:
+##### Output:
 
 ```java
 Enter a distance in miles: 10.3
@@ -195,7 +245,7 @@ Enter a distance in miles: 10.3
 0.17 hours to drive
 ```
 
-#### Integer Values and Formatting
+### Integer Values and Formatting
 
 - Formatting of integer values is also done using sub-specifiers
 - The integer sub-specifiers are similar to the floating-point sub-specifiers
@@ -210,7 +260,7 @@ no `.precision` exists. For the table below, assume `myInt` is `301`.
 |    `width`    | Specifies the minimum number of characters to print. If the formatted value has more characters than the width, the value will not be truncated. If the formatted value has fewer characters than the width, the output will be padded with spaces (or `0`'s if the `0` flag is specified).                                                                 | `System.out.printf("Value: %7d", myInt);`<br>`Value:     301`                                                                                           |
 |    `flags`    | `-`: Left aligns the output given the specified width, padding the output with spaces.<br>`+`: Print a preceding + sign for positive values. Negative numbers are always printed with the `-` sign.<br>`0`: Pads the output with 0's when the formatted value has fewer characters than the width.<br>`space`: Prints a preceding space for positive value. | `System.out.printf("%+d", myInt);`<br>`+301`<br>`System.out.printf("%08d", myInt);`<br>`00000301`<br>`System.out.printf("%+08d", myInt);`<br>`+0000301` |
 
-##### Example Output Formatting for Integers
+#### Example Output Formatting for Integers
 
 ```java
 public class CelestialBodyDist {
@@ -227,14 +277,14 @@ public class CelestialBodyDist {
 }
 ```
 
-###### Output:
+##### Output:
 
 ```java
 Earth is    149598000 kilometers from the sun.
 Saturn is  1433449370 kilometers from the sun.
 ```
 
-#### Strings
+### Strings
 
 Strings may be formatted using sub-specifiers. For the table below, assume
 the `myString` variable is `"Formatting"`.
@@ -245,9 +295,9 @@ the `myString` variable is `"Formatting"`.
 |  `precision`  | Specifies the maximum number of characters to print. If the string has more characters than the precision, the string will be truncated.                                                                                                   | `printf("%.6s", myString);`         |
 |    `flags`    | `-`: Left aligns the output given the specified width, padding the output with spaces.                                                                                                                                                     | `printf("%-20s String", myString);` |
 
-#### Flushing output
+### Flushing output
 
-##### Importance of Flushing output
+#### Importance of Flushing output
 
 - Printing characters from the buffer to the output device (e.g., screen)
   requires a time-consuming reservation of processor resources.
@@ -259,13 +309,13 @@ the `myString` variable is `"Formatting"`.
 - With fewer characters in the buffer, the system may wait until the resources
   are not busy.
 
-##### Situations when flushing output may be necessary
+#### Situations when flushing output may be necessary
 
 - Sometimes a programmer does not want the system to wait.
 - For example, in a very processor-intensive program, waiting could cause
   delayed and/or jittery output.
 
-##### Flushing the buffer
+#### Flushing the buffer
 
 - The PrintStream method `flush()` flushes the stream's buffer contents.
     - For example, the statement `System.out.flush();` writes the contents of
@@ -274,7 +324,7 @@ the `myString` variable is `"Formatting"`.
 - Most Java implementations make `System.out` flush when a newline character is
   output or `println()` method is called.
 
-##### Additional Information
+#### Additional Information
 
 Flushing the output stream is an important concept in programming to ensure
 timely and accurate output to the user. It is also crucial in situations where
@@ -282,13 +332,13 @@ the program needs to print output to an external device, such as a file or a
 network socket. The `flush()` method should be used judiciously to balance the
 need for immediate output with the need to preserve system resources.
 
-#### Exploring Further
+### Exploring Further
 
 - [Oracle's Java Formatter class specification](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/util/Formatter.html)
 
-### Streams using Strings
+## Streams using Strings
 
-#### Scanner object with a String
+### Scanner object with a String
 
 - The Scanner object can accept different input sources including a
   String.
@@ -300,7 +350,7 @@ need for immediate output with the need to preserve system resources.
   integer" or "integer String double", to parse individual items from
   the String.
 
-##### Reading From a String Using a Scanner Object
+#### Reading From a String Using a Scanner Object
 
 ```java
 Scanner inSS = null;              // Input string stream
@@ -333,7 +383,7 @@ Last name: Smith
 Age: 19
 ```
 
-#### Using String streams to process input text
+### Using String streams to process input text
 
 - String streams are useful to process user input line-by-line.
 - The program reads the input line as a String, then extracts
@@ -341,7 +391,7 @@ Age: 19
 - The program can extract input from the stream using the `next()`
   methods.
 
-##### Using a String Stream to Process a Line of Input Text
+#### Using a String Stream to Process a Line of Input Text
 
 ```java
 Scanner scnr = new Scanner(System.in); // Input stream for standard input
@@ -408,7 +458,7 @@ Exit
    Exiting.
 ```
 
-#### Using `StringWriter` and `PrintWriter` to create String streams
+### Using `StringWriter` and `PrintWriter` to create String streams
 
 - An **output string stream** is created using `StringWriter` and
   `PrintWriter` classes.
@@ -424,7 +474,7 @@ Exit
 - The StringWriter's `toString()` method can be used to copy the buffer to a
   String.
 
-#### Creating a String Using Streams
+### Creating a String Using Streams
 
 ```java
 Scanner scnr = new Scanner(System.in);
@@ -490,7 +540,7 @@ Enter "firstname lastname age":
    Age: 14 (minor)
 ```
 
-#### Conclusion
+### Conclusion
 
 - The Scanner class can accept different input sources, including Strings and
   standard input.
@@ -501,9 +551,9 @@ Enter "firstname lastname age":
   streams to output various data types to the underlying character stream in a
   similar manner to `System.out`.
 
-### File Input
+## File Input
 
-#### Opening and Reading from a File
+### Opening and Reading from a File
 
 - To read file input, a programmer can create a new input stream that comes from
   a file.
@@ -514,7 +564,7 @@ Enter "firstname lastname age":
   until valid data is unavailable or the end of the file has been reached.
 - The `hasNextInt()` method returns true if an integer is available for reading.
 
-##### Example Input From a File
+#### Example Input From a File
 
 <u>File Contents:</u>
 
@@ -584,14 +634,14 @@ num1 + num2: 15
 Closing file numFile.txt.
 ```
 
-#### Reading Until the End of the File
+### Reading Until the End of the File
 
 - A program can read varying amounts of data in a file by using a loop that
   reads until valid data is unavailable or the end of the file has been reached.
 - The Scanner class offers multiple `hasNext()` methods for various data types
   such as `int`, `double`, `String`, etc.
 
-##### Example: Reading a Varying Amount of Data from a File
+#### Example: Reading a Varying Amount of Data from a File
 
 ```java
 import java.util.Scanner;
@@ -624,7 +674,7 @@ public class FileReadVaryingAmount {
 }
 ```
 
-#### Example: Counting Instances of a Specific Word
+### Example: Counting Instances of a Specific Word
 
 - The following program uses both the `hasNext()` and `next()` methods to
   determine how many times a user entered word (type String) appears in a file.
@@ -690,12 +740,12 @@ Enter a word: twenty
 twenty appears in the file 3 times.
 ```
 
-#### Exploring Further
+### Exploring Further
 
 - [Oracle's Java FileInputStream class specification](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/io/FileInputStream.html)
 - [Oracle's Java IOException class specification](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/io/IOException.html)
 
-#### Conclusion
+### Conclusion
 
 - File input can be useful when a program should get input from a file rather
   than from a user typing on a keyboard.
