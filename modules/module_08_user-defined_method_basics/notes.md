@@ -3,6 +3,10 @@
 <!-- TOC -->
 * [Module 8 - User-defined Method Basics](#module-8---user-defined-method-basics)
 * [General Notes](#general-notes)
+* [Module Content](#module-content)
+  * [Instructor Slides](#instructor-slides)
+  * [Sample Code & Videos](#sample-code--videos)
+  * [Web Resources](#web-resources)
 * [Zybooks](#zybooks)
   * [User-defined Method Basics](#user-defined-method-basics)
     * [Methods (General)](#methods--general-)
@@ -73,6 +77,30 @@
 <!-- TOC -->
 
 # General Notes
+
+# Module Content
+
+## Instructor Slides
+
+> **Instructor Slides:** [PDF](java_foundations_chapter_5.pdf)
+> 
+> <a href="assets/java_foundations_chapter_5.pdf"><img src="assets/java_foundations_chapter_5.png" width="65%" alt="Java Foundations Chapter 5 Notes"></a>
+>
+> - **Q&A From Chapter 5:** [DOCX](assets/chapter_5_questions_and_answers.docx)
+> 
+> <a href="assets/chapter_5_questions_and_answers.docx"><img src="assets/chapter_5_questions_and_answers.png" width="65%" alt="Java Foundations Chapter 5 Q&A"></a>
+
+## Sample Code & Videos
+
+- [GitHub Code](https://github.com/wadehuber/csc110examples/tree/master/csc110examples/src/videoexamples/module10)
+
+## Web Resources
+
+- **Video:** [Introduction to static methods -basic](https://youtu.be/ahtPAIgLxZ4)
+- **Video:** [Overloaded Methods](https://youtu.be/Egzz2I3iseg)
+- **Video:** [Methods and arrays 1](https://youtu.be/ok7P4O4EauU)
+- **Video:** [Methods and arrays 2](https://youtu.be/To_S1F2SY1E)
+- **Video:** [Methods and arrays 3](https://youtu.be/o0UCfU1Zgw8)
 
 # Zybooks
 
