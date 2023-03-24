@@ -16,7 +16,34 @@
 
 # General Notes
 
-# Zybooks
+# Module 7 Materials
+
+## Instructor Slides
+
+> **Instructor Slides:** [PDF](assets/arrays.pdf)
+>
+> <a href="assets/arrays.pdf"><img src="assets/arrays_preview.png" width="60%" alt="Arrays Powerpoint"></a>
+
+## Chapter 7
+
+Read part 2
+
+> Java Foundations: [Chapter 7](assets/java_foundations_chapter_7.docx)
+> 
+> <a href="assets/java_foundations_chapter_7.docx"><img src="assets/chapter_7_preview.png" width="60%" alt="Java Foundations Chapter 3"></a>
+
+## Sample Code & Videos
+
+**Code Examples:** [GitHub Link](https://github.com/wadehuber/csc110examples/tree/master/csc110examples/src/videoexamples/module08)
+
+## Web Resources
+
+- [Basic Loops - For Each Loop also called an Enhanced For Loop](https://youtu.be/eByBsjUazII)
+- [2-D Arrays - Introduction](https://youtu.be/B-DhUO3xNYQ)
+- [2-D Arrays - Using a nested for loop to visit every element in the array](https://youtu.be/EVl_NBNKOAA)
+- [Nested Loops & 2D Arrays](https://www.youtube.com/watch?v=w-9ZTeO7q_E)
+
+# ZyBooks
 
 ## Swapping Two Variables (General)
 
