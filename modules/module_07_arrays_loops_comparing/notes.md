@@ -3,7 +3,12 @@
 <!-- TOC -->
 * [Module 7 - Arrays, Enhanced Loops, and Comparing](#module-7---arrays-enhanced-loops-and-comparing)
 * [General Notes](#general-notes)
-* [Zybooks](#zybooks)
+* [Module 7 Materials](#module-7-materials)
+  * [Instructor Slides](#instructor-slides)
+  * [Chapter 7](#chapter-7)
+  * [Sample Code & Videos](#sample-code--videos)
+  * [Web Resources](#web-resources)
+* [ZyBooks](#zybooks)
   * [Swapping Two Variables (General)](#swapping-two-variables--general-)
   * [Modifying & Copying / Comparing Arrays](#modifying--copying--comparing-arrays)
     * [Modifying Arrays](#modifying-arrays)
