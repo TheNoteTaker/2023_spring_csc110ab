@@ -3,7 +3,14 @@
 <!-- TOC -->
 * [Module 6 - Arrays](#module-6---arrays)
 * [General Notes](#general-notes)
-* [Zybooks](#zybooks)
+* [Module Materials](#module-materials)
+  * [Instructor Slides - PDF](#instructor-slides---pdf)
+* [Chapter Notes](#chapter-notes)
+  * [Chapter 3](#chapter-3)
+  * [Chapter 7](#chapter-7)
+  * [Sample Code & Videos](#sample-code--videos)
+  * [Web Resources](#web-resources)
+* [ZyBooks](#zybooks)
   * [Array Concept (General)](#array-concept--general-)
   * [Array Declarations and Accessing Elements](#array-declarations-and-accessing-elements)
     * [Using An Expression For An Array Index](#using-an-expression-for-an-array-index)
@@ -18,7 +25,43 @@
 
 # General Notes
 
-# Zybooks
+# Module Materials
+
+## Instructor Slides - PDF
+
+> **Instructor Slides:** [PDF](assets/arrays.pdf)
+>
+> <a href="assets/arrays.pdf"><img src="assets/arrays_preview.png" width="60%" alt="Arrays Powerpoint"></a>
+
+# Chapter Notes
+
+## Chapter 3
+
+> Java Foundations: [Chapter 3](assets/java_foundations_chapter_3.docx)
+> 
+> <a href="assets/java_foundations_chapter_3.docx"><img src="assets/chapter_3_preview.png" width="60%" alt="Java Foundations Chapter 3"></a>
+
+## Chapter 7
+
+Read part 1, stopping at 2D Arrays
+
+> Java Foundations: [Chapter 7](assets/java_foundations_chapter_7.docx)
+> 
+> <a href="assets/java_foundations_chapter_7.docx"><img src="assets/chapter_7_preview.png" width="60%" alt="Java Foundations Chapter 3"></a>
+
+## Sample Code & Videos
+
+[GitHub Link](https://github.com/wadehuber/csc110examples/tree/master/csc110examples/src/videoexamples/module07)
+
+## Web Resources
+
+- **Oracle Docs:** [Arrays](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
+- **Video:** [Introduction to Arrays Video by Author John Lewis](https://mediaplayer.pearsoncmg.com/_ph_cc_ecs640480_set.title.Overview_of_Arrays__/aw/streaming/aw_lewis_javafound_3/Video7_1.m4v)
+- **Video:** [Introduction to Arrays - Part 1](https://youtu.be/Mo5xZYJb9NI)
+- **Video:** [Java Programming Tutorial 27 - Introduction to Arrays](https://youtu.be/L06uGnF4IpY)
+- **Video:** [Java Arrays: Finding the maximum and minimum value in an array](https://www.youtube.com/watch?v=rxJRJV3eEaI)
+
+# ZyBooks
 
 ## Array Concept (General)
 
@@ -140,7 +183,7 @@ array's index range.
 **Parallel arrays** are when the contents at any given index in the two arrays
 are related:
 
-- `letterWeights[0]` holds a weight of 1.0 ounce 
+- `letterWeights[0]` holds a weight of 1.0 ounce
 - `postageCosts[0]` holds the postage cost of 1.0 ounce
 
 ### Example
