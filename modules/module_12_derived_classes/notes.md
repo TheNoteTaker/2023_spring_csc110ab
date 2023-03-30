@@ -105,30 +105,6 @@
   vegetables), a `ProduceItem` class with data
   members `itemName`, `itemQuantity`, and `expirationDate` may be desired.
 
-```plantuml
-@startuml
-
-class GenericItem {
-    - itemName
-    - itemQuantity
-    
-    + `setName()`     + `setQuantity()`     + `printItem()` }
-
-class produceOne as "ProduceItem" <<Independent Class>> {
-    - itemName
-    - itemQuantity
-    - expirationDate
-    
-    + `setName()`     + `setQuantity()`     + `printItem()`     + `getExpiration()`     + `setExpiration()` }
-
-class produceTwo as "ProduceItem" <<Derived Class>> extends GenericItem {
-    - expirationDate
-    
-    + `getExpiration()`     + `setExpiration()` }
-
-@enduml
-```
-
 ### Inheritance
 
 - A **derived class** (or **subclass**) is a class that is derived from another
@@ -622,7 +598,7 @@ object's type.
 
 #### GenericItem.java:
 
-```
+```java
 public class GenericItem {
    public void setName(String newName) {
       itemName = newName;
@@ -643,7 +619,7 @@ public class GenericItem {
 
 #### ProduceItem.java:
 
-```
+```java
 public class ProduceItem extends GenericItem { // ProduceItem derived from GenericItem
    public void setExpiration(String newDate) {
       expirationDate = newDate;
@@ -665,7 +641,7 @@ public class ProduceItem extends GenericItem { // ProduceItem derived from Gener
 
 #### ItemInventory.java:
 
-```
+```java
 import java.util.ArrayList;
 
 public class ItemInventory {
