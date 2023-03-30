@@ -13,4 +13,4 @@
 - **Module 09:** [Objects and Classes](modules/module_09_objects_and_classes/notes.md)
 - **Module 10:** [More on Objects and References](modules/module_10_more_on_objects_and_references/notes.md)
 - **Module 11:** [Output and Input Streams](modules/module_11_output_and_input_streams/notes.md)
-
+- **Module 12:** [Derived Classes](modules/module_12_derived_classes/notes.md)
