@@ -1,53 +1,94 @@
 # Module 13 - Handling Exceptions
 
 <!-- TOC -->
+
 * [Module 13 - Handling Exceptions](#module-13---handling-exceptions)
 * [General Notes](#general-notes)
 * [Module Content](#module-content)
+    * [Notes](#notes)
+    * [Additional Resources](#additional-resources)
 * [ZyBooks](#zybooks)
-  * [Handling Exceptions in Java](#handling-exceptions-in-java)
-    * [Unhandled exceptions](#unhandled-exceptions)
-    * [Catching exceptions](#catching-exceptions)
-    * [Handling Exceptions](#handling-exceptions)
-      * [Example: `LightTravelTime` Program](#example--lighttraveltime-program)
-    * [Common exception types](#common-exception-types)
-    * [Conclusion](#conclusion)
-  * [Throwing Exceptions](#throwing-exceptions)
-    * [Using throw statements](#using-throw-statements)
-    * [Using exceptions to separate error checking from normal code](#using-exceptions-to-separate-error-checking-from-normal-code)
-      * [Example outputs:](#example-outputs-)
-    * [Multiple exception handlers](#multiple-exception-handlers)
-      * [Example: BMI calculator with multiple exception handlers](#example--bmi-calculator-with-multiple-exception-handlers)
-        * [Example outputs:](#example-outputs--1)
-  * [Conclusion](#conclusion-1)
-  * [Exceptions with Methods](#exceptions-with-methods)
-    * [Specifying Exceptions Thrown by a Method](#specifying-exceptions-thrown-by-a-method)
-    * [Checked vs Unchecked Exceptions](#checked-vs-unchecked-exceptions)
-    * [Throwing Exceptions in Methods Calling Other Methods](#throwing-exceptions-in-methods-calling-other-methods)
-    * [Hierarchical Methods Example: DataTimeSpeedup](#hierarchical-methods-example--datatimespeedup)
-      * [Console](#console)
-      * [times1.txt](#times1txt)
-      * [times2.txt](#times2txt)
-      * [times3.txt](#times3txt)
-    * [Conclusion](#conclusion-2)
-  * [User-defined exceptions](#user-defined-exceptions)
-    * [Limitations of using the Exception class](#limitations-of-using-the-exception-class)
-    * [Example: Density calculator with multiple user-defined exception types](#example--density-calculator-with-multiple-user-defined-exception-types)
-      * [Class Definitions](#class-definitions)
-      * [Explanation](#explanation)
-    * [Conclusion](#conclusion-3)
-  * [Exceptions with Files](#exceptions-with-files)
-    * [Handling exceptions from opening invalid files](#handling-exceptions-from-opening-invalid-files)
-    * [Closing Files](#closing-files)
-      * [Closing multiple files](#closing-multiple-files)
-      * [Closing files with the try-with-resources statement](#closing-files-with-the-try-with-resources-statement)
-    * [finally block](#finally-block)
-    * [Conclusion](#conclusion-4)
+    * [Handling Exceptions in Java](#handling-exceptions-in-java)
+        * [Unhandled exceptions](#unhandled-exceptions)
+        * [Catching exceptions](#catching-exceptions)
+        * [Handling Exceptions](#handling-exceptions)
+            * [Example: `LightTravelTime` Program](#example--lighttraveltime-program)
+        * [Common exception types](#common-exception-types)
+        * [Conclusion](#conclusion)
+    * [Throwing Exceptions](#throwing-exceptions)
+        * [Using throw statements](#using-throw-statements)
+        * [Using exceptions to separate error checking from normal code](#using-exceptions-to-separate-error-checking-from-normal-code)
+            * [Example outputs:](#example-outputs-)
+        * [Multiple exception handlers](#multiple-exception-handlers)
+            * [Example: BMI calculator with multiple exception handlers](#example--bmi-calculator-with-multiple-exception-handlers)
+                * [Example outputs:](#example-outputs--1)
+    * [Conclusion](#conclusion-1)
+    * [Exceptions with Methods](#exceptions-with-methods)
+        * [Specifying Exceptions Thrown by a Method](#specifying-exceptions-thrown-by-a-method)
+        * [Checked vs Unchecked Exceptions](#checked-vs-unchecked-exceptions)
+        * [Throwing Exceptions in Methods Calling Other Methods](#throwing-exceptions-in-methods-calling-other-methods)
+        * [Hierarchical Methods Example: DataTimeSpeedup](#hierarchical-methods-example--datatimespeedup)
+            * [Console](#console)
+            * [times1.txt](#times1txt)
+            * [times2.txt](#times2txt)
+            * [times3.txt](#times3txt)
+        * [Conclusion](#conclusion-2)
+    * [User-defined exceptions](#user-defined-exceptions)
+        * [Limitations of using the Exception class](#limitations-of-using-the-exception-class)
+        * [Example: Density calculator with multiple user-defined exception types](#example--density-calculator-with-multiple-user-defined-exception-types)
+            * [Class Definitions](#class-definitions)
+            * [Explanation](#explanation)
+        * [Conclusion](#conclusion-3)
+    * [Exceptions with Files](#exceptions-with-files)
+        * [Handling exceptions from opening invalid files](#handling-exceptions-from-opening-invalid-files)
+        * [Closing Files](#closing-files)
+            * [Closing multiple files](#closing-multiple-files)
+            * [Closing files with the try-with-resources statement](#closing-files-with-the-try-with-resources-statement)
+        * [finally block](#finally-block)
+        * [Conclusion](#conclusion-4)
+
 <!-- TOC -->
 
 # General Notes
 
 # Module Content
+
+## Notes
+
+> **Google Slides:**
+> [Link](https://docs.google.com/presentation/d/107YSaf5JEzA3DHmA1ujbF13MxjI6dxoedeA7sywpzvU/view#slide=id.p)
+>
+> <a href="https://docs.google.com/presentation/d/107YSaf5JEzA3DHmA1ujbF13MxjI6dxoedeA7sywpzvU/view#slide=id.p"><img height="350" src="assets/google_slides_preview.png" width="500" alt=""/></a>
+>
+> ---
+>
+> **Instructor Notes:**
+> [Link](https://docs.google.com/document/d/14yEsVmoDYuyI3Sj0FPLraN3xWHWsbHXLD5Ac_2-gPBo/view)
+>
+> <a href="https://docs.google.com/document/d/14yEsVmoDYuyI3Sj0FPLraN3xWHWsbHXLD5Ac_2-gPBo/view"><img height="500" src="assets/instructor_notes_preview.png" width="450" alt=""/></a>
+>
+> ---
+>
+> **Instructor Q&A:**
+> [Link](https://docs.google.com/document/d/1SveqPb7ivX-bIIAiiqtFSMfjO4oloG01t4FYu8etZ4c/view)
+>
+> <a href="https://docs.google.com/document/d/1SveqPb7ivX-bIIAiiqtFSMfjO4oloG01t4FYu8etZ4c/view"><img height="500" src="assets/instructor_faq_preview.png" width="450" alt=""/></a>
+
+## Additional Resources
+
+- **Book:**
+  [Think Java: How to Think Like a Computer Scientist](http://greenteapress.com/thinkjava6/html/thinkjava6012.html)
+  by _Allen B. Downey and Chris Mayfield_
+- **Video:**
+  [Overview of writing your own Classes and Creating Objects](https://youtu.be/JwpRzmAFC_I "Link")[ ![](/images/play_overlay.png)](https://youtu.be/JwpRzmAFC_I)
+- **Video:**
+  [an Account class and tester class. Similar to BankAccount](https://youtu.be/Nq6dIF4NcsI "Link")
+- **Video:**
+  [ArrayList Basics (Ch 10)](https://youtu.be/a9JZXYXM4xE)
+- **Video:**
+  [ArrayLists (Ch 10) - A dynamic Data structure](https://youtu.be/6m6X77xAKcU)
+- **Video:**
+  [ArrayList: Array vs. ArrayList](https://youtu.be/zvlIE7HXx5o)
 
 # ZyBooks
 
@@ -308,29 +349,35 @@ public class BMICalculator {
 
 ### Checked vs Unchecked Exceptions
 
-Java has two types of exceptions: 
-- **Checked**
-  - A Checked exception is an exception that a programmer should be able to
-    anticipate and handle.
-    - _Ex:_ A program that opens files should anticipate and handle a FileNotFoundException.
-- **Unchecked**
-  - An Unchecked exception is an exception caused by hardware or logic errors that
-    a programmer usually cannot anticipate and handle.
-    - _Ex:_ A program should try to eliminate code that uses null references instead of catching and handling NullPointerException.
+Java has two types of exceptions:
 
-Java's **catch or specify requirement** requires methods to either catch a checked
-  exception using a `catch` block or specify that the method throws the checked
-  exception using a `throws` clause.
+- **Checked**
+    - A Checked exception is an exception that a programmer should be able to
+      anticipate and handle.
+        - _Ex:_ A program that opens files should anticipate and handle a
+          FileNotFoundException.
+- **Unchecked**
+    - An Unchecked exception is an exception caused by hardware or logic errors
+      that
+      a programmer usually cannot anticipate and handle.
+        - _Ex:_ A program should try to eliminate code that uses null references
+          instead of catching and handling NullPointerException.
+
+Java's **catch or specify requirement** requires methods to either catch a
+checked
+exception using a `catch` block or specify that the method throws the checked
+exception using a `throws` clause.
+
 - Code that does not obey the catch or specify requirement does not compile.
 
-|                                                         Unchecked exception                                                          | Notes                                                                                                                                |
-|:------------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------|
-|       [NullPointerException](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/lang/NullPointerException.html)       | Indicates a null reference.                                                                                                          |
-|  [IndexOutOfBoundsException](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/lang/IndexOutOfBoundsException.html)  | Indicates that an index (e.g., an index for an array) is outside the appropriate range.                                              |
-|        [ArithmeticException](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/lang/ArithmeticException.html)        | Indicates the occurrence of an exceptional arithmetic condition (e.g., integer division by zero).                                    |
-|                     [IOError](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/io/IOError.html)                     | Indicates the failure of an I/O operation.                                                                                           |
-|         [ClassCastException](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/lang/ClassCastException.html)         | Indicates an invalid attempt to cast an object to type of which the object is not an instance (e.g., casting a Double to a String).  |
-|   [IllegalArgumentException](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/lang/IllegalArgumentException.html)   | Indicates an illegal or inappropriate method argument.                                                                               |
+|                                                        Unchecked exception                                                         | Notes                                                                                                                               |
+|:----------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------|
+|      [NullPointerException](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/lang/NullPointerException.html)      | Indicates a null reference.                                                                                                         |
+| [IndexOutOfBoundsException](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/lang/IndexOutOfBoundsException.html) | Indicates that an index (e.g., an index for an array) is outside the appropriate range.                                             |
+|       [ArithmeticException](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/lang/ArithmeticException.html)       | Indicates the occurrence of an exceptional arithmetic condition (e.g., integer division by zero).                                   |
+|                    [IOError](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/io/IOError.html)                    | Indicates the failure of an I/O operation.                                                                                          |
+|        [ClassCastException](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/lang/ClassCastException.html)        | Indicates an invalid attempt to cast an object to type of which the object is not an instance (e.g., casting a Double to a String). |
+|  [IllegalArgumentException](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/lang/IllegalArgumentException.html)  | Indicates an illegal or inappropriate method argument.                                                                              |
 
 ### Throwing Exceptions in Methods Calling Other Methods
 
@@ -470,22 +517,34 @@ Negative number of values
 
 ## User-defined exceptions
 
-User-defined exception types can be used to handle specific exceptions in a program. A custom exception type can be defined by extending the Exception class. This approach allows the programmer to define exceptions with custom messages that are relevant to the program's context. Additionally, by defining custom exception types, the program can handle each exception separately, making the code more readable and efficient.
+User-defined exception types can be used to handle specific exceptions in a
+program. A custom exception type can be defined by extending the Exception
+class. This approach allows the programmer to define exceptions with custom
+messages that are relevant to the program's context. Additionally, by defining
+custom exception types, the program can handle each exception separately, making
+the code more readable and efficient.
 
 ### Limitations of using the Exception class
 
-A catch block that catches the `Exception` type can catch exceptions of any type.
-- Thus, a program that uses the `Exception` type may not be able to differentiate between caught exceptions or may catch unintended exception types.
+A catch block that catches the `Exception` type can catch exceptions of any
+type.
+
+- Thus, a program that uses the `Exception` type may not be able to
+  differentiate between caught exceptions or may catch unintended exception
+  types.
 
 ### Example: Density calculator with multiple user-defined exception types
 
-The program below throws exceptions of type `InvalidNegativeInputException` for negative inputs and throws `NaNException` when dividing **0.0** by **0.0**. 
+The program below throws exceptions of type `InvalidNegativeInputException` for
+negative inputs and throws `NaNException` when dividing **0.0** by **0.0**.
 
-By using separate exception handlers for each exception type, the program can handle each exception separately.
+By using separate exception handlers for each exception type, the program can
+handle each exception separately.
 
 #### Class Definitions
 
 `InvalidNegativeInputException.java`:
+
 ```java
 public class InvalidNegativeInputException extends Exception {
    public InvalidNegativeInputException(String varName) {
@@ -495,6 +554,7 @@ public class InvalidNegativeInputException extends Exception {
 ```
 
 `NaNException.java`:
+
 ```java
 public class NaNException extends Exception {
    public NaNException(String varName) {
@@ -504,6 +564,7 @@ public class NaNException extends Exception {
 ```
 
 `DensityCalculator.java`:
+
 ```java
 import java.util.Scanner;
 
@@ -556,27 +617,49 @@ public class DensityCalculator {
 
 #### Explanation
 
-The `DensityCalculator` class defines two methods, `getPositiveValue` and `getDensity`, that throw exceptions of type `InvalidNegativeInputException` and `NaNException` when the input is negative or NaN, respectively. These exceptions are defined in the classes `InvalidNegativeInputException` and `NaNException`.
+The `DensityCalculator` class defines two methods, `getPositiveValue`
+and `getDensity`, that throw exceptions of type `InvalidNegativeInputException`
+and `NaNException` when the input is negative or NaN, respectively. These
+exceptions are defined in the classes `InvalidNegativeInputException`
+and `NaNException`.
 
-The `main` method uses try-catch blocks to handle exceptions thrown by `getDensity`. If an `InvalidNegativeInputException` is caught, the program prints the exception message, and if a `NaNException` is caught, the program also prints the exception message. By handling each exception separately, the program can provide more specific and informative error messages.
+The `main` method uses try-catch blocks to handle exceptions thrown
+by `getDensity`. If an `InvalidNegativeInputException` is caught, the program
+prints the exception message, and if a `NaNException` is caught, the program
+also prints the exception message. By handling each exception separately, the
+program can provide more specific and informative error messages.
 
 ### Conclusion
 
-Custom exception types are a powerful tool that can be used to improve the readability and efficiency of programs. By defining custom exception types, the program can handle each exception separately, making the code more readable and efficient. Additionally, custom exception types can provide more specific and informative error messages that are relevant to the program's context, making it easier to identify and fix errors. It is important to note that custom exception types should be used judiciously and only when necessary to avoid overcomplicating the program's design.
+Custom exception types are a powerful tool that can be used to improve the
+readability and efficiency of programs. By defining custom exception types, the
+program can handle each exception separately, making the code more readable and
+efficient. Additionally, custom exception types can provide more specific and
+informative error messages that are relevant to the program's context, making it
+easier to identify and fix errors. It is important to note that custom exception
+types should be used judiciously and only when necessary to avoid
+overcomplicating the program's design.
 
 ## Exceptions with Files
 
 ### Handling exceptions from opening invalid files
-- A program may try to open a file that does not exist. 
-  - _Ex:_ The file may have been deleted, renamed, or moved.
-- The `FileInputStream` constructor throws `FileNotFoundException` if the specified file cannot be found or opened for reading.
+
+- A program may try to open a file that does not exist.
+    - _Ex:_ The file may have been deleted, renamed, or moved.
+- The `FileInputStream` constructor throws `FileNotFoundException` if the
+  specified file cannot be found or opened for reading.
 
 ### Closing Files
-- A good practice is to close all files to allow the operating system to clean up any resources used while reading or writing a file.
-- To close the files, the `Scanner` and `PrintWriter` objects should be initialized to `null` and closed in a try-catch block.
-- The following code reads numbers from an input file, writes the average to an output file, and then closes both files before exiting.
+
+- A good practice is to close all files to allow the operating system to clean
+  up any resources used while reading or writing a file.
+- To close the files, the `Scanner` and `PrintWriter` objects should be
+  initialized to `null` and closed in a try-catch block.
+- The following code reads numbers from an input file, writes the average to an
+  output file, and then closes both files before exiting.
 
 #### Closing multiple files
+
 ```java
 import java.util.Scanner;
 import java.io.FileInputStream;
@@ -641,10 +724,15 @@ public class FileDataAverage {
 ```
 
 #### Closing files with the try-with-resources statement
-- A program can use a try-with-resources statement to automatically close files if any exception, caught or uncaught, occurs within a try block.
-- The **try-with-resources** statement declares closable resources, like files, within parentheses after the try keyword and before the try's opening curly brace.
+
+- A program can use a try-with-resources statement to automatically close files
+  if any exception, caught or uncaught, occurs within a try block.
+- The **try-with-resources** statement declares closable resources, like files,
+  within parentheses after the try keyword and before the try's opening curly
+  brace.
 - The declared resources are closed after the try block exits.
-- Multiple resources, separated by semicolons, can be declared in a single try-with-resources statement.
+- Multiple resources, separated by semicolons, can be declared in a single
+  try-with-resources statement.
 
 ```java
 try (FileInputStream inStrm = new FileInputStream(fName);
@@ -660,9 +748,13 @@ catch (IOException e) {
 ```
 
 ### finally block
+
 - A `finally` block always executes when a try block exits.
-- A programmer can use a `finally` block to do additional processing, even if an exception is thrown in the try statement.
-- The program below uses a `finally` block to write partial results to the output file, even if an `InputMismatchException` exception occurs while reading the input file.
+- A programmer can use a `finally` block to do additional processing, even if an
+  exception is thrown in the try statement.
+- The program below uses a `finally` block to write partial results to the
+  output file, even if an `InputMismatchException` exception occurs while
+  reading the input file.
 
 ```java
 import java.util.Scanner;
@@ -701,8 +793,14 @@ public class FileDataSum {
 ```
 
 ### Conclusion
-- It is important to handle exceptions when working with files to prevent the program from crashing.
-- A good practice is to close all files after finishing working with them to allow the operating system to clean up any resources used while reading or writing a file.
-- The try-with-resources statement can be used to automatically close files if any exception occurs within a try block.
-- The finally block always executes when a try block exits and can be used to do additional processing, even if an exception is thrown in the try statement.
+
+- It is important to handle exceptions when working with files to prevent the
+  program from crashing.
+- A good practice is to close all files after finishing working with them to
+  allow the operating system to clean up any resources used while reading or
+  writing a file.
+- The try-with-resources statement can be used to automatically close files if
+  any exception occurs within a try block.
+- The finally block always executes when a try block exits and can be used to do
+  additional processing, even if an exception is thrown in the try statement.
         
