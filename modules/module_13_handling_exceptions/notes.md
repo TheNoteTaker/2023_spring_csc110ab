@@ -102,8 +102,8 @@
 
 ### Catching exceptions
 
-To avoid having a program end when an exception occurs, a program can use **try
-** and **catch** blocks to handle the exception during program execution.
+To avoid having a program end when an exception occurs, a program can use 
+**try** and **catch** blocks to handle the exception during program execution.
 
 - A **try block** surrounds normal code, which is exited immediately if a
   statement within the try block throws an exception.
