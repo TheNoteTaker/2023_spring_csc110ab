@@ -4,6 +4,9 @@
 * [Module 11 - Output and Input Streams](#module-11---output-and-input-streams)
 * [General Notes](#general-notes)
 * [Module Content](#module-content)
+  * [Instructor Slides](#instructor-slides)
+  * [Instructor Video - Reading From a File](#instructor-video---reading-from-a-file)
+  * [Instructor Video - Writing To a File](#instructor-video---writing-to-a-file)
 * [ZyBooks](#zybooks)
   * [Output Streams](#output-streams)
     * [Input Streams](#input-streams)
@@ -53,6 +56,21 @@
 # General Notes
 
 # Module Content
+
+## Instructor Slides
+
+> **Instructor Slides:** [PDF](assets/file_i_o_java.pdf) | [Slides](
+> https://docs.google.com/presentation/d/16XOJMOidEjuVi3aVRiA_hoR7ZiVqRwIh0uZkygM4JBI/view#slide=id.p)
+>
+> <a href="assets/file_i_o_java.pdf"><img src="assets/module_11_preview.png" width="65%" alt="File I/O in Java"></a>
+
+## Instructor Video - Reading From a File
+
+<a href="https://www.youtube.com/watch?v=9AKs7bINnoA"><img alt="Reading From a File Video Note" height="300" src="assets/reading_from_a_file_video_preview.png" width="500"/></a>
+
+## Instructor Video - Writing To a File
+
+<a href="https://www.youtube.com/watch?v=g1SzS8xmX_M"><img alt="Writing To a File Video Note" height="300" src="assets/writing_to_a_file_video_preview.png" width="500"/></a>
 
 # ZyBooks
 
@@ -779,12 +797,12 @@ file and extract data from the file until there is no more data available.
 
 ### Basic steps for opening and writing a file
 
-| Action                                         | Sample code                                                              |
-|:-----------------------------------------------|:-------------------------------------------------------------------------|
-| Open the file helloWorld.txt for writing       | `FileOutputStream fileStream = new FileOutputStream("helloWorld.txt");`  |
-| Create a PrintWriter to write to the file      | `PrintWriter outFS = new PrintWriter(fileStream);`                       |
-| Write the string "Hello World!" to the file    | `outFS.println("Hello World!");`                                         |
-| Close the file after writing all desired data  | `outFS.close();`                                                         |
+| Action                                        | Sample code                                                             |
+|:----------------------------------------------|:------------------------------------------------------------------------|
+| Open the file helloWorld.txt for writing      | `FileOutputStream fileStream = new FileOutputStream("helloWorld.txt");` |
+| Create a PrintWriter to write to the file     | `PrintWriter outFS = new PrintWriter(fileStream);`                      |
+| Write the string "Hello World!" to the file   | `outFS.println("Hello World!");`                                        |
+| Close the file after writing all desired data | `outFS.close();`                                                        |
 
 Note: The above table is written in Markdown format. Markdown is a lightweight
 markup language that allows you to format text using plain text syntax. Markdown
