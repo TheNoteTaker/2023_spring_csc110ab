@@ -72,6 +72,10 @@
 
 <a href="https://www.youtube.com/watch?v=g1SzS8xmX_M"><img alt="Writing To a File Video Note" height="300" src="assets/writing_to_a_file_video_preview.png" width="500"/></a>
 
+## Instructor Video - Parse Data
+
+<a href="https://www.youtube.com/watch?v=yIEV1jdivmo"><img alt="Parse Data Video Note" height="300" src="assets/parse_data_video_preview.png" width="500"/></a>
+
 # ZyBooks
 
 ## Output Streams
